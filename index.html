@@ -13,16 +13,20 @@
 
     <div class="card-login ">
       <div class="row no-gutters">
-        <div class="card-body ">
+        <div class="card-body md-a">
           <h2 class="card-title">Log in</h2>
           <p class="card-sub">This is a secure system and you will need to provide
             your login details to access the site.</p>
-          <input class="input-field mb-3" type="email" name="" placeholder="Email"> <br>
-          <input class="input-field mb-3" type="password" name="" placeholder="Password"> <br>
+
+              <input class="input-field mb-3" type="email" name="email" placeholder="Email" required> <br>
+              <input class="input-field mb-3" type="password" name="password" placeholder="Password" required> <br>
+            
+
           <input type="checkbox" id="checkbox" />
           <label for="checkbox" class="label-remember">Remember me</label>
           <a class="forgot-login" href="forgot-password.html">Forgot password?</a>
-          <a class="btn-dark" href="dashboard-admin.html">Log in</a>
+          <a type="submit" class="btn-dark" href="dashboard-admin.html">Log in</a>
+
         </div>
       </div>
     </div>

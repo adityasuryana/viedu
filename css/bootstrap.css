@@ -4730,10 +4730,6 @@ input[type="button"].btn-block {
   border-top: 0;
 }
 
-.card-title {
-  margin-bottom: 0.75rem;
-}
-
 .web-title {
   position: absolute;
   left: 4.17%;
@@ -4752,7 +4748,7 @@ input[type="button"].btn-block {
 /* Login CSS */
 
 .card-login {
-  margin: 100px 80px 100px 50px;
+  margin: 100px 80px 100px 80px;
   position: relative;
   background: rgba(255, 208, 130, 0.9);
   mix-blend-mode: normal;
@@ -4791,6 +4787,21 @@ input[type="button"].btn-block {
   color: #1c1c1e;
 }
 
+.card-info-title {
+  font-family: Poppins;
+  font-weight: 800;
+  font-size: 40px;
+  margin: auto;
+  color: #1c1c1e;
+  float: right;
+}
+
+.card-info-icon {
+  font-size: 50px;
+  float: left;
+  color: #1c1c1e;
+}
+
 .card-sub {
   margin: 20px;
   font-family: Poppins;
@@ -4801,11 +4812,11 @@ input[type="button"].btn-block {
   color: rgba(28, 28, 30, 0.8);
 }
 
-.input-field {
+.input-field{
+
   font-weight: 500;
-  margin: 5px 40px 0 40px;
   padding: 15px;
-  width: 400px;
+  width: 100%;
   height: 45px;
   border-radius: 8px;
   background-color: #f8f8f8;
@@ -4945,8 +4956,7 @@ label:hover:before {
   color: #FFD082;
   text-align: center;
 
-  margin: 20px;
-  width: 440px;
+  width: 100%;
   height: 50px;
   float: left;
   outline: none;
@@ -5053,8 +5063,39 @@ label:hover:before {
 
 /* Style the main content */
 .main {
-  margin: 50px 50px 30px 120px;
+  margin: 25px 50px 30px 120px;
   padding: 0px 10px;
+}
+
+.main-title {
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.active {
+  margin: 10px;
+  text-align: center;
+  color: #1c1c1e;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.16);
+  z-index: 0
+}
+
+.card-info {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 240px;
+    word-wrap: break-word;
+    background-color: #ffd082;
+    background-clip: border-box;
+    border-radius: 10px;
 }
 
 /* End Of Dashboard CSS */
@@ -5141,7 +5182,7 @@ label:hover:before {
   border-bottom-left-radius: calc(0.25rem - 1px);
 }
 
-.card-deck .card {
+.card-deck .card-info {
   margin-bottom: 15px;
 }
 
@@ -5154,7 +5195,7 @@ label:hover:before {
     margin-right: -15px;
     margin-left: -15px;
   }
-  .card-deck .card {
+  .card-deck .card-info {
     -ms-flex: 1 0 0%;
     flex: 1 0 0%;
     margin-right: 15px;
