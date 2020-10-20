@@ -4727,6 +4727,21 @@ input[type="button"].btn-block {
   margin-bottom: 0.75rem;
 }
 
+.web-title {
+  position: absolute;
+  left: 4.17%;
+  right: 75.21%;
+  top: 85.74%;
+  bottom: 5%;
+
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 100px;
+  letter-spacing: 0.5em;
+  float: left;
+
+}
+
 /* Login CSS */
 
 .card-login {
