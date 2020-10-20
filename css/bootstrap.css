@@ -3173,15 +3173,14 @@ input[type="button"].btn-block {
   float: left;
   min-width: 10rem;
   padding: 0.5rem 0;
-  margin: 0.125rem 0 0;
+  margin: 5px 10px 0px 10px;
   font-size: 1rem;
   color: #212529;
   text-align: left;
   list-style: none;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
+  border-radius: 15px;
 }
 
 .dropdown-menu-left {
@@ -3341,7 +3340,7 @@ input[type="button"].btn-block {
   width: 100%;
   padding: 0.25rem 1.5rem;
   clear: both;
-  font-weight: 400;
+  font-weight: 500;
   color: #212529;
   text-align: inherit;
   white-space: nowrap;
@@ -3351,14 +3350,19 @@ input[type="button"].btn-block {
 
 .dropdown-item:hover, .dropdown-item:focus {
   color: #16181b;
+  width: auto;
+  height: auto;
   text-decoration: none;
   background-color: #f8f9fa;
+  border-radius: 15px;
 }
 
 .dropdown-item.active, .dropdown-item:active {
-  color: #fff;
+
+  color: #1c1c1e;
   text-decoration: none;
-  background-color: #007bff;
+  background-color: #ffd082;
+
 }
 
 .dropdown-item.disabled, .dropdown-item:disabled {
@@ -4275,6 +4279,7 @@ input[type="button"].btn-block {
 }
 
 .navbar {
+  height: 70px;
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -4285,6 +4290,8 @@ input[type="button"].btn-block {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  border-radius: 0px 0px 20px 20px;
+  z-index: 2
 }
 
 .navbar .container,
@@ -4956,6 +4963,103 @@ label:hover:before {
 }
 
 /* End Of Login CSS */
+
+/* Dashboard CSS */
+
+.navbar-title {
+  margin-left: 60px;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: 8px;
+}
+
+.profile-btn {
+  width: auto;
+  height: auto;
+  background: rgba(255, 255, 255, 0.9);
+  margin-left: 10px;
+  border-radius: 25px;
+  padding: 6px;
+  box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.16);
+  border: none;
+}
+
+.profile-btn:hover, .profile-btn:focus, .profile-btn:active {
+  background-color: rgba(255, 255, 255);
+}
+
+.navbar-btn-user:hover {
+  color: #1c1c1e;
+}
+
+.navbar-img-user {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-btn-user {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1c1c1e;
+  margin: 15px 15px 15px 10px;
+}
+
+.sidebar {
+  height: 100%;
+  width: 70px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #;
+  overflow-x: hidden;
+  padding-top: 16px;
+  z-index:1;
+  border-radius: 20px 0px 20px 0px;
+}
+
+/* Style sidebar links */
+.sidebar a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  color: #1c1c1e;
+  display: block;
+  z-index: 3
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+  margin: 10px;
+  weight:auto;
+  width: auto;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.sidebar a:focus {
+  margin: 10px;
+  text-align: center;
+  color: #1c1c1e;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.16);
+  z-index: 0
+
+}
+
+/* Style the main content */
+.main {
+  margin: 50px 50px 30px 120px;
+  padding: 0px 10px;
+}
+
+/* End Of Dashboard CSS */
+
+
 
 .card-subtitle {
   margin-top: -0.375rem;
@@ -6982,6 +7086,10 @@ button.bg-dark:focus {
 
 .bg-white {
   background-color: #fff !important;
+}
+
+.bg-yellow {
+  background-color: #FFD082 !important;
 }
 
 .bg-transparent {
