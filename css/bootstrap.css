@@ -3183,6 +3183,11 @@ input[type="button"].btn-block {
   border-radius: 15px;
 }
 
+.dopdown-menu:hover {
+
+
+}
+
 .dropdown-menu-left {
   right: auto;
   left: 0;
@@ -3244,6 +3249,14 @@ input[type="button"].btn-block {
   margin-bottom: 0.125rem;
 }
 
+.dropup .dropdown-visitor {
+  top: auto;
+  bottom: 100%;
+  margin-top: 0;
+  margin-bottom: 0.125rem;
+}
+
+
 .dropup .dropdown-toggle::after {
   display: inline-block;
   margin-left: 0.255em;
@@ -3260,6 +3273,14 @@ input[type="button"].btn-block {
 }
 
 .dropright .dropdown-menu {
+  top: 0;
+  right: auto;
+  left: 100%;
+  margin-top: 0;
+  margin-left: 0.125rem;
+}
+
+.dropright .dropdown-visitor {
   top: 0;
   right: auto;
   left: 100%;
@@ -3287,6 +3308,14 @@ input[type="button"].btn-block {
 }
 
 .dropleft .dropdown-menu {
+  top: 0;
+  right: 100%;
+  left: auto;
+  margin-top: 0;
+  margin-right: 0.125rem;
+}
+
+.dropleft .dropdown-visitor {
   top: 0;
   right: 100%;
   left: auto;
@@ -3350,11 +3379,10 @@ input[type="button"].btn-block {
 
 .dropdown-item:hover, .dropdown-item:focus {
   color: #16181b;
-  width: auto;
-  height: auto;
+
   text-decoration: none;
-  background-color: #f8f9fa;
-  border-radius: 15px;
+  background-color: rgb(255, 208, 130, 0.7);
+  border-radius: 10px;
 }
 
 .dropdown-item.active, .dropdown-item:active {
@@ -3374,6 +3402,11 @@ input[type="button"].btn-block {
 .dropdown-menu.show {
   display: block;
 }
+
+.dropdown-visitor.show {
+  display: block;
+}
+
 
 .dropdown-header {
   display: block;
@@ -4340,6 +4373,11 @@ input[type="button"].btn-block {
   float: none;
 }
 
+.navbar-nav .dropdown-visitor {
+  position: static;
+  float: none;
+}
+
 .navbar-text {
   display: inline-block;
   padding-top: 0.5rem;
@@ -4400,6 +4438,11 @@ input[type="button"].btn-block {
   .navbar-expand-sm .navbar-nav .dropdown-menu {
     position: absolute;
   }
+
+  .navbar-expand-sm .navbar-nav .dropdown-visitor {
+    position: absolute;
+  }
+
   .navbar-expand-sm .navbar-nav .nav-link {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
@@ -4440,6 +4483,9 @@ input[type="button"].btn-block {
     flex-direction: row;
   }
   .navbar-expand-md .navbar-nav .dropdown-menu {
+    position: absolute;
+  }
+  .navbar-expand-md .navbar-nav .dropdown-visitor {
     position: absolute;
   }
   .navbar-expand-md .navbar-nav .nav-link {
@@ -4484,6 +4530,9 @@ input[type="button"].btn-block {
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute;
   }
+  .navbar-expand-lg .navbar-nav .dropdown-visitor {
+    position: absolute;
+  }
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
@@ -4526,6 +4575,9 @@ input[type="button"].btn-block {
   .navbar-expand-xl .navbar-nav .dropdown-menu {
     position: absolute;
   }
+  .navbar-expand-xl .navbar-nav .dropdown-visitor {
+    position: absolute;
+  }
   .navbar-expand-xl .navbar-nav .nav-link {
     padding-right: 0.5rem;
     padding-left: 0.5rem;
@@ -4565,6 +4617,10 @@ input[type="button"].btn-block {
 }
 
 .navbar-expand .navbar-nav .dropdown-menu {
+  position: absolute;
+}
+
+.navbar-expand .navbar-nav .dropdown-visitor {
   position: absolute;
 }
 
@@ -4687,7 +4743,6 @@ input[type="button"].btn-block {
 }
 
 .card {
-
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -4811,6 +4866,8 @@ input[type="button"].btn-block {
   text-align: justify;
   color: rgba(28, 28, 30, 0.8);
 }
+
+
 
 .input-field{
 
@@ -5018,7 +5075,7 @@ label:hover:before {
 .sidebar {
   height: 100%;
   width: 70px;
-  position: fixed;
+  position: absolute;
   z-index: 1;
   top: 0;
   left: 0;
@@ -5063,7 +5120,7 @@ label:hover:before {
 
 /* Style the main content */
 .main {
-  margin: 25px 50px 30px 120px;
+  margin: 25px 50px 20px 120px;
   padding: 0px 10px;
 }
 
@@ -5097,6 +5154,82 @@ label:hover:before {
     background-clip: border-box;
     border-radius: 10px;
 }
+
+.visitor-chart {
+  margin-right: 60px;
+  margin-left: 130px;
+  max-width: 780px;
+  max-height: 600px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.card-sub-visitor {
+  margin: 25px 0px 10px 25px;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 28px;
+  color: #1c1c1e;
+}
+
+.btn-visitor {
+  margin: 25px 25px 10px 25px;
+  font-weight: 500;
+  color: #fff;
+  border: 3px #1c1c1e solid;
+  text-align: center;
+  font-size: 20px;
+  float: right;
+  width: 15%;
+  height: 35px;
+  background-color: #1c1c1e;
+  border-radius: 10px;
+}
+
+.btn-visitor:hover {
+  color: #fff;
+}
+
+.dropdown-visitor {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 5px 10px 0px 10px;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #1c1c1e;
+  background-clip: padding-box;
+  border-radius: 15px;
+}
+
+.dropdown-visitor:hover {
+  width: auto;
+  height: auto;
+  background-color: #ffd082;
+}
+
+.dropdown-visitor[x-placement^="top"], .dropdown-visitor[x-placement^="right"], .dropdown-visitor[x-placement^="bottom"], .dropdown-visitor[x-placement^="left"] {
+  right: auto;
+  bottom: auto;
+}
+
+.dropdown-visitor.show {
+  display: block;
+}
+
+.nav-tabs .dropdown-visitor {
+  margin-top: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
 
 /* End Of Dashboard CSS */
 
