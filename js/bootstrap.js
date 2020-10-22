@@ -67,7 +67,8 @@
    */
 // Add optional
 
-var ctx = document.getElementById("myChart").getContext('2d');
+
+var ctx = 'myChart';
 var myChart = new Chart(ctx, {
   type: 'line',
   data: {
@@ -75,9 +76,14 @@ var myChart = new Chart(ctx, {
     datasets: [{
       label: '',
       data: [12, 19, 3, 23, 10, 20, 5],
-      backgroundColor: ['rgba(255, 208, 130, 0.6)'],
-      borderColor: ['rgba(28,28,30,1)'],
-      borderWidth: 1 }]
+      backgroundColor: [
+        'rgba(255, 208, 130, 0.6)'
+      ],
+      borderColor: [
+        'rgba(28,28,30,1)'
+      ],
+      borderWidth: 1
+    }]
   },
   options: {
     scales: {
@@ -89,6 +95,7 @@ var myChart = new Chart(ctx, {
     }
   }
 });
+
 
 
 function viewjam(){
