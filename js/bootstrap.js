@@ -65,7 +65,52 @@
    * Private TransitionEnd Helpers
    * ------------------------------------------------------------------------
    */
+// Add optional
 
+var ctx = document.getElementById("myChart").getContext('2d');
+var myChart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    datasets: [{
+      label: '',
+      data: [12, 19, 3, 23, 10, 20, 5],
+      backgroundColor: ['rgba(255, 208, 130, 0.6)'],
+      borderColor: ['rgba(28,28,30,1)'],
+      borderWidth: 1 }]
+  },
+  options: {
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero:true
+        }
+      }]
+    }
+  }
+});
+
+
+function viewjam(){
+                   var jam;
+                   var jamku = new Date();//membuat objek waktu
+                   jam = "Sekarang Jam : "+jamku.getHours()+":"+jamku.getMinutes()+":"+jamku.getSeconds();//menempatkan data waktu pada variabel
+                   document.getElementById('tampiljam').innerHTML=jam;//menampilkan variabel jam pada html
+                   setTimeout('viewjam()',0);//meload function secara terus menerus
+          }
+
+var hariseminggu = new Array('Ahad','Senin','Selasa','Rabu','Kamis','Jumat','Sabtu');
+          var bulansetahun = new Array('Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember');
+
+          function hari(){
+                   var hariini;
+                   var hari = new Date();//membuat objek waktu
+                   hariini = hariseminggu[hari.getDay()]+", "+hari.getDate()+" "+bulansetahun[hari.getMonth()]+" "+hari.getFullYear();//menempatkan data waktu pada variabel
+                   document.getElementById('tampilhari').innerHTML=hariini; //menampilkan variabel hariini pada html
+                   setTimeout('hari()',300); //meload function secara terus menerus
+          }
+
+// end
   var TRANSITION_END = 'transitionend';
   var MAX_UID = 1000000;
   var MILLISECONDS_MULTIPLIER = 1000; // Shoutout AngusCroll (https://goo.gl/pxwQGp)

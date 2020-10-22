@@ -8118,7 +8118,7 @@ defaults._set('global', {
 		caretSize: 5,
 		cornerRadius: 6,
 		multiKeyBackground: '#fff',
-		displayColors: true,
+		displayColors: false,
 		borderColor: 'rgba(0,0,0,0)',
 		borderWidth: 0,
 		callbacks: {

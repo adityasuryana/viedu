@@ -3171,7 +3171,7 @@ input[type="button"].btn-block {
   z-index: 1000;
   display: none;
   float: left;
-  min-width: 10rem;
+  min-width: auto;
   padding: 0.5rem 0;
   margin: 5px 10px 0px 10px;
   font-size: 1rem;
@@ -3183,10 +3183,6 @@ input[type="button"].btn-block {
   border-radius: 15px;
 }
 
-.dopdown-menu:hover {
-
-
-}
 
 .dropdown-menu-left {
   right: auto;
@@ -3379,18 +3375,15 @@ input[type="button"].btn-block {
 
 .dropdown-item:hover, .dropdown-item:focus {
   color: #16181b;
-
   text-decoration: none;
   background-color: rgb(255, 208, 130, 0.7);
   border-radius: 10px;
 }
 
 .dropdown-item.active, .dropdown-item:active {
-
   color: #1c1c1e;
   text-decoration: none;
   background-color: #ffd082;
-
 }
 
 .dropdown-item.disabled, .dropdown-item:disabled {
@@ -3406,7 +3399,6 @@ input[type="button"].btn-block {
 .dropdown-visitor.show {
   display: block;
 }
-
 
 .dropdown-header {
   display: block;
@@ -4756,8 +4748,6 @@ input[type="button"].btn-block {
   border-radius: 0.25rem;
 }
 
-
-
 .card > hr {
   margin-right: 0;
   margin-left: 0;
@@ -4843,6 +4833,7 @@ input[type="button"].btn-block {
 }
 
 .card-info-title {
+  position: relative;
   font-family: Poppins;
   font-weight: 800;
   font-size: 40px;
@@ -4852,6 +4843,8 @@ input[type="button"].btn-block {
 }
 
 .card-info-icon {
+  margin-bottom: 10px;
+  position: relative;
   font-size: 50px;
   float: left;
   color: #1c1c1e;
@@ -4870,7 +4863,6 @@ input[type="button"].btn-block {
 
 
 .input-field{
-
   font-weight: 500;
   padding: 15px;
   width: 100%;
@@ -5162,32 +5154,33 @@ label:hover:before {
   max-height: 600px;
   background-color: #fff;
   border-radius: 15px;
+  border: none;
 }
 
 .card-sub-visitor {
   margin: 25px 0px 10px 25px;
   font-family: Poppins;
-  font-weight: 700;
-  font-size: 28px;
+  font-weight: 650;
+  font-size: 25px;
   color: #1c1c1e;
 }
 
 .btn-visitor {
   margin: 25px 25px 10px 25px;
   font-weight: 500;
-  color: #fff;
+  color: #1c1c1e;
   border: 3px #1c1c1e solid;
   text-align: center;
   font-size: 20px;
   float: right;
-  width: 15%;
+  width: 35px;
   height: 35px;
-  background-color: #1c1c1e;
   border-radius: 10px;
 }
 
 .btn-visitor:hover {
   color: #fff;
+  background-color: #1c1c1e;
 }
 
 .dropdown-visitor {
@@ -5230,6 +5223,31 @@ label:hover:before {
   border-top-right-radius: 0;
 }
 
+.card-activity {
+  margin: 30px;
+  padding: 20px;
+  position: relative;
+  float: right;
+  height: auto;
+  width: auto;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.16);
+  border: none;
+}
+
+.time-board {
+  color: #fff;
+  margin: 30px 60px 0px 0px;
+  width: auto;
+  height: 200px;
+  float: right;
+  border-radius: 15px;
+  box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.16);
+  border: none;
+
+}
+
 
 /* End Of Dashboard CSS */
 
@@ -5240,7 +5258,8 @@ label:hover:before {
   margin-bottom: 0;
 }
 
-.card-text:last-child {
+.card-text {
+  position: relative;
   margin-bottom: 0;
 }
 
@@ -7249,7 +7268,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  background-color: #1c1c1e !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
