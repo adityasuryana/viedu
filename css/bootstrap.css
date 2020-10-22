@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
- 
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -4795,6 +4795,7 @@ input[type="button"].btn-block {
 /* Login CSS */
 
 .card-login {
+  padding: 20px;
   margin: 100px 80px 100px 80px;
   position: relative;
   background: rgba(255, 208, 130, 0.9);
@@ -4830,7 +4831,7 @@ input[type="button"].btn-block {
   font-family: Poppins;
   font-weight: 800;
   font-size: 40px;
-  margin: 20px 0 0 20px;
+
   color: #1c1c1e;
 }
 
@@ -4853,7 +4854,7 @@ input[type="button"].btn-block {
 }
 
 .card-sub {
-  margin: 20px;
+
   font-family: Poppins;
   font-weight: 500;
   font-size: 20px;
@@ -4905,10 +4906,10 @@ input[type="button"].btn-block {
 [type="checkbox"]:checked + label:after {
   content: '\25CF';
   position: absolute;
-  top: 0.29em; left: 0em;
+  top: 0.29em; left: 0.01em;
   font-size: 2em;
   line-height: 0;
-  transition: all .2s;
+  transition: all .3s;
 }
 
 [type="checkbox"]:not(:checked) + label:after {
@@ -4926,20 +4927,16 @@ label:hover:before {
 
 .label-remember {
   color: #1c1c1e;
-  font-family: Poppins;
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
+  left: -15px;
 }
 
 .forgot-login {
   color: #1c1c1e;
-  font-family: Poppins;
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
-  margin-left: 110px;
-  line-height: 33px;
+  float: right;
 }
 
 .forgot-login:hover {
@@ -4957,7 +4954,7 @@ label:hover:before {
   color: #FFD082;
   text-align: center;
 
-  margin: 30px 20px 30px 0px;
+  font-size: 22px;
   width: 100px;
   height: 45px;
   float: right;
@@ -4969,8 +4966,8 @@ label:hover:before {
 }
 
 .btn-dark:hover {
-  color: white;
-  background-color: rgba(28, 28, 30, 0.8);
+  color: #1c1c1e;
+  background-color: #fff;
   text-decoration-line: none;
 }
 
@@ -4981,11 +4978,10 @@ label:hover:before {
   font-size: 25px;
   line-height: 50px;
   color: #FFD082;
-  text-align: center;
+  text-align: center ;
 
-  margin: 30px 20px 30px 20px;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   float: left;
   outline: none;
   border: none;
@@ -4995,8 +4991,8 @@ label:hover:before {
 }
 
 .btn-dark-sm:hover {
-  color: white;
-  background-color: rgba(28, 28, 30, 0.8);
+  color: #1c1c1e;
+  background-color: #fff;
   text-decoration-line: none;
 }
 
@@ -5018,8 +5014,8 @@ label:hover:before {
 }
 
 .btn-dark-lg:hover {
-  color: white;
-  background-color: rgba(28, 28, 30, 0.8);
+  color: #1c1c1e;
+  background-color: #fff;
   text-decoration-line: none;
 }
 
@@ -5043,6 +5039,7 @@ label:hover:before {
   padding: 6px;
   box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.16);
   border: none;
+
 }
 
 .profile-btn:hover, .profile-btn:focus, .profile-btn:active {
@@ -5063,7 +5060,11 @@ label:hover:before {
   font-size: 18px;
   font-weight: 600;
   color: #1c1c1e;
-  margin: 15px 15px 15px 10px;
+
+}
+
+button:focus {
+  outline: none;
 }
 
 .sidebar {
@@ -5180,7 +5181,7 @@ label:hover:before {
   border-radius: 10px;
 }
 
-.btn-visitor:hover {
+.btn-visitor:hover, .btn-visitor:focus {
   color: #fff;
   background-color: #1c1c1e;
 }
