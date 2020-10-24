@@ -67,6 +67,43 @@
    */
 // Add optional
 
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    timeZone: 'UTC',
+    initialView: 'dayGridMonth',
+    events: 'https://fullcalendar.io/demo-events.json',
+    editable: true,
+    selectable: true
+  });
+
+  calendar.render();
+});
+
+
+
+var gdr = 'chartGdr';
+var chartGdr = new Chart(gdr, {
+  type: 'doughnut',
+  data: {
+    labels: ["Man", "Women"],
+    datasets: [{
+      label: '',
+      data: [12, 19],
+      backgroundColor: [
+        'rgba(137,207,240,1)',
+        'rgba(254,91,172,1)'
+      ],
+      borderColor: [
+        'rgba(28,28,30,1)'
+      ],
+      borderWidth: 0
+    }]
+  },
+
+});
+
 
 var ctx = 'myChart';
 var myChart = new Chart(ctx, {
