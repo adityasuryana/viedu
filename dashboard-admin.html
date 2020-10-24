@@ -5,32 +5,35 @@
     <title>Dashboard | VIEDU</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.2/main.css">
 
  </head>
+
   <body>
 
-    <!-- Header -->
-    <section>
+    <!-- Navbar -->
       <nav class="navbar bg-yellow shadow">
         <span class="navbar-title">VIEDU</span>
         <div class="dropdown ">
           <button type="button" class="profile-btn navbar-btn-user shadow" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <img class="navbar-img-user mr-2" src="img/user/1.jpg" alt="">
-            Aditya <i class="ml-2 mr-2 fa fa-chevron-down"></i>
+            Aditya <i class="m-2 fa fa-chevron-down"></i>
           </button>
 
           <div class="ml-3 dropdown-menu shadow">
-            <a href="#" class="dropdown-item"><i class="mr-3 fa fa-wrench"></i>Settings</a>
+            <a href="#" class="dropdown-item"><i class="fa fa-wrench mr-3"></i>Settings</a>
             <div class="dropdown-divider"></div>
-            <a href="index.html" class="dropdown-item"><i class="mr-4 fa fa-sign-out-alt"></i>Logout</a>
+            <a href="index.html" class="dropdown-item"><i class="fa fa-sign-out-alt mr-3"></i>Logout</a>
           </div>
         </div>
       </nav>
-  </section>
-
 
     <!-- Sidebar -->
-    <section>
+    <section class="">
+
+      <aside class="">
       <div class="sidebar bg-yellow shadow pt-5">
         <a data-toggle="tooltip" title="Dashboard" class="mt-5 active" href="dashboard-admin.html"><i class=" fas fa-fw fa-columns"></i></a>
         <a data-toggle="tooltip" title="Student" class="mt-5 " href="dashboard-student.html"><i class=" fas fa-fw fa-users"></i></a>
@@ -40,74 +43,138 @@
         <a data-toggle="tooltip" title="Forum" class="mt-5" href="dashboard-forum.html"><i class=" fas fa-fw fa-newspaper"></i></a>
         <a data-toggle="tooltip" title="Report" class="mt-5" href="dashboard-report.html"><i class=" fas fa-fw fa-file-alt"></i></a>
         </div>
-    </section>
-
-<!-- Card Date -->
-    <section>
-
+    </aside>
 
     </section>
+
+
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <h1 class="main-title mt-4">Dashboard</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Card -->
-<section >
-  <div class="main">
-    <h2 class="main-title">Dashboard</h2>
-<!--
-    <div class="time-board bg-dark">
-      <h3>Aditya Suryana</h3>
-      <div><i>Sekarang Jam</i> <strong><big><a id="tampiljam"></a></big></strong></div>
-      <div><i>Hari ini </i> <strong><big><a id="tampilhari"></a></big></strong></div>
+<section class="content">
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-lg-2 col-6">
+        <div class="small-box bg-yellow">
+          <div class="inner">
+            <h3>300</h3>
+            <p>Account</p>
+          </div>
+          <div class="icon"><i class="fas fa-user"></i></div>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-6">
+        <div class="small-box bg-yellow">
+          <div class="inner">
+            <h3>200</h3>
+            <p>PDF</p>
+          </div>
+          <div class="icon">
+            <i class="fas fa-file-pdf"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-6">
+        <div class="small-box bg-yellow">
+          <div class="inner">
+            <h3>80</h3>
+            <p>Video</p>
+          </div>
+          <div class="icon">
+            <i class="fas fa-video"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-6">
+        <div class="small-box bg-yellow">
+          <div class="inner">
+            <h3>50</h3>
+            <p>Forum</p>
+          </div>
+          <div class="icon">
+            <i class="fas fa-newspaper"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-12" >
+        <div class="small-box bg-white shadow" >
+          <div class="card-header border-0 text-center">
+            <h6 class="card-title"><i class="far fa-clock"></i></h6>
+            <h5>Today</h5>
+            <h5>Time</h5>
+          </div>
+        </div>
     </div>
--->
-    <div class="card-deck">
-      <div class="card-info shadow" data-toggle="tooltip" title="PDF">
-        <div class="card-body mx-auto">
-          <i class="card-info-icon fas fa-file-pdf mr-4"></i>
-          <h5 class="card-info-title">200</h5><br>
-          <h6 class="card-text">PDF</h6>
-        </div>
-      </div>
-      <div class="card-info shadow" data-toggle="tooltip" title="Video">
-        <div class="card-body mx-auto">
-          <i class="card-info-icon fas fa-video mr-4"></i>
-          <h5 class="card-info-title">80</h5><br>
-          <h6 class="card-text">Video</h6>
-        </div>
-      </div>
-      <div class="card-info shadow" data-toggle="tooltip" title="Forum">
-        <div class="card-body mx-auto">
-          <i class="card-info-icon fas fa-newspaper mr-4"></i>
-          <h5 class="card-info-title">300</h5><br>
-          <h6 class="card-text">Forum</h6>
-        </div>
-      </div>
+
     </div>
-  </div>
+    </div>
 </section>
 
 
+</div>
 
-<!-- Chart -->
-<section>
-    <div class="card visitor-chart mt-5 shadow">
-      <div class="dropdown">
-        <button type="button" class="btn-visitor shadow" id="dropdownMenu" data-toggle="dropdown">
-          <i class="fa fa-chevron-down"></i>
-        </button>
-        <h3 class="card-sub-visitor">Statistics Visitor</h3>
-        <div class="mr-5 dropdown-menu shadow">
-            <a href="#" class="dropdown-item">Daily</a>
-            <a href="#" class="dropdown-item">Monthly</a>
-            <a href="#" class="dropdown-item">Yearly</a>
+
+
+<div class="content-wrapper">
+
+  <!-- Card -->
+<section class="content">
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-lg-8 col-12">
+        <div class="small-box bg-white p-4">
+
+            <div class="dropdown">
+              <button type="button" class="btn-visitor shadow mb-4" id="dropdownMenu" data-toggle="dropdown">
+                <i class="fa fa-chevron-down"></i>
+              </button>
+              <h3 class="card-sub-box">Statistics Visitor</h3>
+              <div class="dropdown-menu shadow">
+                  <a href="#" class="dropdown-item">Daily</a>
+                  <a href="#" class="dropdown-item">Monthly</a>
+                  <a href="#" class="dropdown-item">Yearly</a>
+              </div>
+            </div>
+            <canvas class="mt-3 mb-3" id="myChart"></canvas>
+            <a style="color: #1c1c1e;" href="#">export to csv</a>
+
         </div>
       </div>
-      <canvas class="p-3"  id="myChart"></canvas>
-      <a class="" style="color: #1c1c1e; text-align: right; padding: 0px 25px 10px 0px; " href="#">export to csv</a>
-  </div>
 
+      <div class="col-lg-2 col-12" >
+        <div class="small-box bg-white shadow p-4">
+            <h3 class="card-sub-box mb-4">Gender</h3>
+          <canvas id="chartGdr"></canvas>
+        </div>
+    </div>
+
+    </div>
+    </div>
 </section>
 
+</div>
 
+
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.2/main.min.js"></script>
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
 <script type="text/javascript" src="js/Chart.js"></script>
 <script type="text/javascript" src="jquery/dist/jquery.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
