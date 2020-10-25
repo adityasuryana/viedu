@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.3.2/main.css">
-
+    <!-- jsCalendar style -->
+    <link rel="stylesheet" type="text/css" href="plugins/jsCalendar.css">
+    <!-- jsCalendar script -->
+    <script type="text/javascript" src="plugins/jsCalendar.js"></script>
  </head>
 
   <body>
@@ -112,21 +113,25 @@
         </div>
       </div>
 
-      <div class="col-lg-4 col-12" >
-        <div class="small-box bg-white shadow" >
-          <div class="card-header border-0 text-center">
-            <h6 class="card-title"><i class="far fa-clock"></i></h6>
-            <h5>Today</h5>
-            <h5>Time</h5>
-          </div>
-        </div>
+<div class="col-lg-1 col-12" >
+</div>
+
+<div class="col-lg-2 col-12" >
+  <div class="small-box bg-white shadow" >
+    <div class="card-header border-0 text-center">
+      <h6 class=""><i class="far fa-clock"></i></h6>
+      <h5 id="day"></h5>
+      <h5 id="time"></h5>
     </div>
+  </div>
+</div>
+
+<div class="col-lg-1 col-12" >
+</div>
 
     </div>
     </div>
 </section>
-
-
 </div>
 
 
@@ -139,36 +144,55 @@
     <div class="row">
 
       <div class="col-lg-8 col-12">
-        <div class="small-box bg-white p-4">
+        <div class="small-box bg-white p-4 shadow">
 
             <div class="dropdown">
               <button type="button" class="btn-visitor shadow mb-4" id="dropdownMenu" data-toggle="dropdown">
                 <i class="fa fa-chevron-down"></i>
               </button>
               <h3 class="card-sub-box">Statistics Visitor</h3>
-              <div class="dropdown-menu shadow">
+              <div class="mr-5 dropdown-menu shadow">
                   <a href="#" class="dropdown-item">Daily</a>
                   <a href="#" class="dropdown-item">Monthly</a>
                   <a href="#" class="dropdown-item">Yearly</a>
               </div>
+              <canvas class="mt-3 mb-3" id="myChart"></canvas>
             </div>
-            <canvas class="mt-3 mb-3" id="myChart"></canvas>
+
             <a style="color: #1c1c1e;" href="#">export to csv</a>
 
         </div>
       </div>
 
-      <div class="col-lg-2 col-12" >
-        <div class="small-box bg-white shadow p-4">
-            <h3 class="card-sub-box mb-4">Gender</h3>
-          <canvas id="chartGdr"></canvas>
+      <div class="col-lg-4 col-6" >
+        <div class="small-box bg-white shadow p-4" >
+
+              <div class="auto-jsCalendar custom-purple">
+              </div>
+
         </div>
     </div>
+
 
     </div>
     </div>
 </section>
 
+<section class="content" >
+    <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-lg-4 col-6" >
+        <div class="small-box bg-white shadow p-4">
+            <h3 class="card-sub-box mb-4">Gender</h3>
+            <canvas id="chartGdr"></canvas>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</section>
 </div>
 
 

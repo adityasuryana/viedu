@@ -67,19 +67,6 @@
    */
 // Add optional
 
-document.addEventListener('DOMContentLoaded', function() {
-  var calendarEl = document.getElementById('calendar');
-
-  var calendar = new FullCalendar.Calendar(calendarEl, {
-    timeZone: 'UTC',
-    initialView: 'dayGridMonth',
-    events: 'https://fullcalendar.io/demo-events.json',
-    editable: true,
-    selectable: true
-  });
-
-  calendar.render();
-});
 
 
 
@@ -119,7 +106,7 @@ var myChart = new Chart(ctx, {
       borderColor: [
         'rgba(28,28,30,1)'
       ],
-      borderWidth: 1
+      borderWidth: 2
     }]
   },
   options: {
@@ -134,25 +121,16 @@ var myChart = new Chart(ctx, {
 });
 
 
+var today = new Date();
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 
-function viewjam(){
-                   var jam;
-                   var jamku = new Date();//membuat objek waktu
-                   jam = "Sekarang Jam : "+jamku.getHours()+":"+jamku.getMinutes()+":"+jamku.getSeconds();//menempatkan data waktu pada variabel
-                   document.getElementById('tampiljam').innerHTML=jam;//menampilkan variabel jam pada html
-                   setTimeout('viewjam()',0);//meload function secara terus menerus
-          }
+document.getElementById("time").innerHTML = time;
 
-var hariseminggu = new Array('Ahad','Senin','Selasa','Rabu','Kamis','Jumat','Sabtu');
-          var bulansetahun = new Array('Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember');
+var today = new Date();
+var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
 
-          function hari(){
-                   var hariini;
-                   var hari = new Date();//membuat objek waktu
-                   hariini = hariseminggu[hari.getDay()]+", "+hari.getDate()+" "+bulansetahun[hari.getMonth()]+" "+hari.getFullYear();//menempatkan data waktu pada variabel
-                   document.getElementById('tampilhari').innerHTML=hariini; //menampilkan variabel hariini pada html
-                   setTimeout('hari()',300); //meload function secara terus menerus
-          }
+document.getElementById("day").innerHTML = date;
+
 
 // end
   var TRANSITION_END = 'transitionend';

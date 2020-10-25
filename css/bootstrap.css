@@ -10915,3 +10915,11 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 12px
   }
 }
+
+    .jsCalendar.custom-purple {
+      border: none;
+    }
+
+    .jsCalendar.custom-purple tbody td.jsCalendar-current {
+        background-color: #1c1c1e;
+    }
