@@ -4,8 +4,6 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
-
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10786,7 +10784,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .small-box>.inner {
-  padding: 20px
+  padding: 20px;
 }
 
 .small-box>.small-box-footer {
@@ -10797,12 +10795,12 @@ a.text-dark:hover, a.text-dark:focus {
   position: relative;
   text-align: center;
   text-decoration: none;
-  z-index: 10
+  z-index: 10;
 }
 
 .small-box>.small-box-footer:hover {
   background-color: rgba(0, 0, 0, .15);
-  color: #fff
+  color: #fff;
 }
 
 .small-box h3 {
@@ -10810,47 +10808,47 @@ a.text-dark:hover, a.text-dark:focus {
   font-weight: 700;
   margin: 0 0 10px;
   padding: 0;
-  white-space: nowrap
+  white-space: nowrap;
 }
 
 @media (min-width:992px) {
   .col-lg-2 .small-box h3, .col-md-2 .small-box h3, .col-xl-2 .small-box h3 {
-    font-size: 15px
+    font-size: 15px;
   }
 
   .col-lg-3 .small-box h3, .col-md-3 .small-box h3, .col-xl-3 .small-box h3 {
-    font-size: 15px
+    font-size: 15px;
   }
 }
 
 @media (min-width:1200px) {
   .col-lg-2 .small-box h3, .col-md-2 .small-box h3, .col-xl-2 .small-box h3 {
-    font-size: 25px
+    font-size: 25px;
   }
 
   .col-lg-3 .small-box h3, .col-md-3 .small-box h3, .col-xl-3 .small-box h3 {
-    font-size: 25px
+    font-size: 25px;
   }
 }
 
 .small-box p {
-  font-size: 1rem
+  font-size: 1rem;
 }
 
 .small-box p>small {
   color: #f8f9fa;
   display: block;
   font-size: .9rem;
-  margin-top: 5px
+  margin-top: 5px;
 }
 
 .small-box h3, .small-box p {
-  z-index: 5
+  z-index: 5;
 }
 
 .small-box .icon {
   color: rgba(0, 0, 0, 0.7);
-  z-index: 0
+  z-index: 0;
 }
 
 .small-box .icon>i {
@@ -10858,12 +10856,12 @@ a.text-dark:hover, a.text-dark:focus {
   position: absolute;
   right: 15px;
   top: 15px;
-  transition: transform .3s linear
+  transition: transform .3s linear;
 }
 
 .small-box .icon>i.fa, .small-box .icon>i.fab, .small-box .icon>i.fad, .small-box .icon>i.fal, .small-box .icon>i.far, .small-box .icon>i.fas, .small-box .icon>i.ion {
   font-size: 70px;
-  top: 20px
+  top: 20px;
 }
 
 .small-box .icon svg {
@@ -10871,48 +10869,46 @@ a.text-dark:hover, a.text-dark:focus {
   position: absolute;
   right: 15px;
   top: 15px;
-  transition: transform .3s linear
+  transition: transform .3s linear;
 }
 
 .small-box:hover {
-  text-decoration: none
+  text-decoration: none;
 }
 
 .small-box:hover .icon>i, .small-box:hover .icon>i.fa, .small-box:hover .icon>i.fab, .small-box:hover .icon>i.fad, .small-box:hover .icon>i.fal, .small-box:hover .icon>i.far, .small-box:hover .icon>i.fas, .small-box:hover .icon>i.ion {
-  transform: scale(1.1)
+  transform: scale(1.1);
 }
 
 .small-box:hover .icon>svg {
-  transform: scale(1.1)
+  transform: scale(1.1);
 }
 
 @media (max-width:767.98px) {
   .small-box {
-    text-align: center
+    text-align: center;
   }
 
   .small-box .icon {
-    display: none
+    display: none;
   }
 
   .small-box p {
-    font-size: 12px
+    font-size: 12px;
   }
 }
 
 @media (max-width: 1330px) {
   .small-box {
-    text-align: center
+    text-align: center;
   }
 
-
-
   .small-box .icon {
-    display: none
+    display: none;
   }
 
   .small-box p {
-    font-size: 12px
+    font-size: 12px;
   }
 }
 

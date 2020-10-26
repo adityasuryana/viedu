@@ -11379,7 +11379,7 @@ var noop = helpers.noop;
 
 defaults._set('global', {
 	legend: {
-		display: false,
+		display: true,
 		position: 'top',
 		fullWidth: true,
 		reverse: false,

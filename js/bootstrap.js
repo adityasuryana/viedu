@@ -98,7 +98,7 @@ var myChart = new Chart(ctx, {
   data: {
     labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
     datasets: [{
-      label: '',
+      label: 'visitor',
       data: [12, 19, 3, 23, 10, 20, 5],
       backgroundColor: [
         'rgba(255, 208, 130, 0.6)'
@@ -120,16 +120,6 @@ var myChart = new Chart(ctx, {
   }
 });
 
-
-var today = new Date();
-var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-
-document.getElementById("time").innerHTML = time;
-
-var today = new Date();
-var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
-
-document.getElementById("day").innerHTML = date;
 
 
 // end
