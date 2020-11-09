@@ -4306,6 +4306,7 @@ input[type="button"].btn-block {
 }
 
 .navbar {
+  width: 100%;
   height: 70px;
   position: relative;
   display: -ms-flexbox;
@@ -5066,7 +5067,7 @@ button:focus {
 .sidebar {
   height: 100vh;
   width: 70px;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
@@ -5074,7 +5075,7 @@ button:focus {
   overflow-x: hidden;
   padding-top: 16px;
   z-index:1;
-  border-radius: 20px 0px 20px 0px;
+  border-radius: 0px 0px 20px 0px;
 }
 
 .main-sidebar {
@@ -10813,11 +10814,12 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (min-width:992px) {
   .col-lg-2 .small-box h3, .col-md-2 .small-box h3, .col-xl-2 .small-box h3 {
-    font-size: 15px;
+    font-size: 25px;
+
   }
 
   .col-lg-3 .small-box h3, .col-md-3 .small-box h3, .col-xl-3 .small-box h3 {
-    font-size: 15px;
+    font-size: 25px;
   }
 }
 
@@ -10908,7 +10910,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
 
   .small-box p {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 
