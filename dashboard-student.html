@@ -2,11 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Dashboard | VIEDU</title>
+    <title>Student | VIEDU</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="plugins/jsCalendar.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
     </head>
   <body>
 
@@ -28,8 +28,6 @@
     </nav>
 
     <!-- Sidebar -->
-    <section class="">
-
     <aside class="">
     <div class="sidebar bg-yellow shadow pt-5">
       <a data-toggle="tooltip" title="Dashboard" class="mt-5 " href="dashboard-admin.html"><i class=" fas fa-fw fa-columns"></i></a>
@@ -41,20 +39,179 @@
       <a data-toggle="tooltip" title="Report" class="mt-5" href="dashboard-report.html"><i class=" fas fa-fw fa-file-alt"></i></a>
       </div>
     </aside>
-    </section>
 
   <!-- Main Content -->
   <div class="content-header">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-12" style="margin-left: -15px !important">
           <h1 class="main-title mt-4">Student</h1>
         </div>
+        <a href="#" data-toggle="modal" data-target="#addStudent" class="btn bg-yellow shadow mb-4"><i class="fas fa-user-plus mr-1"></i> Add Student</a>
       </div>
     </div>
   </div>
 
 
+  <section class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-8 col-md-12 col-sm-12 col-12" style="margin-left:-15px;">
+          <div class="small-box bg-white shadow p-3 mt-3">
+
+      <table id="table" class="table text-center " >
+        <thead >
+          <tr>
+                <th style="border-top:none">Name</th>
+                <th style="border-top:none">Class</th>
+                <th style="border-top:none">Major</th>
+                <th style="border-top:none"></th>
+            </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+                <td>Michael Bruce</td>
+                <td>X</td>
+                <td>Javascript Developer</td>
+                <td> <a href="#"data-toggle="modal" data-target="#details" data-toggle="tooltip" title="Details" class="btn bg-gray  m-2" style="width: 40px; color: #1c1c1e"><i class="fas fa-info"></i></a>
+                     <a href="#"data-toggle="modal" data-target="#editStudent" data-toggle="tooltip" title="Edit" class="btn bg-yellow" style="width: 40px"><i class="fas fa-edit"></i></a>
+                </td>
+            </tr>
+            <tr>
+                  <td>Michael Bruce</td>
+                  <td>X</td>
+                  <td>Javascript Developer</td>
+                  <th> <a href="#" data-toggle="tooltip" title="Details" class="btn bg-gray  m-2" style="width: 40px; color: #1c1c1e"><i class="fas fa-info"></i></a>
+                       <a href="#" data-toggle="tooltip" title="Edit" class="btn bg-yellow" style="width: 40px"><i class="fas fa-edit"></i></a>
+                  </th>
+              </tr>
+        </tbody>
+      </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <div class="modal fade" id="addStudent" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h5 class="modal-title">Add Student</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-row">
+              <div class="col-12 mb-2">
+                <label>Student ID</label>
+                <input type="text" class="form-control" id="" placeholder="123XX" >
+              </div>
+              <div class="col-6 mb-2">
+                <label>First Name</label>
+                <input type="text" class="form-control" placeholder="First name">
+              </div>
+              <div class="col-6 mb-2">
+                <label>Last Name</label>
+                <input type="text" class="form-control" placeholder="Last name">
+              </div>
+              <div class="col-6 mb-2" id="datepicker">
+                <label>Birth Date</label>
+                <input type="text"  class="form-control">
+              </div>
+              <div class="col-6 mb-2">
+                <label>Phone Number</label>
+                <input type="number" class="form-control" placeholder="+62">
+              </div>
+              <div class="col-12 mb-2">
+                <label>Email</label>
+                <input type="email" class="form-control" id="" placeholder="yourmail@mail.com" >
+              </div>
+              <div class="col-12">
+                <label>Password</label>
+                <input type="password" class="form-control" id="" placeholder="*******">
+                <small id="passwordHelpBlock" class="form-text text-muted">
+                  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                </small>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn bg-dark shadow" data-dismiss="modal">Close</button>
+          <button type="button" class="btn bg-yellow shadow">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="editStudent" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h5 class="modal-title">Edit Student</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-row">
+              <div class="col-12 mb-2">
+                <label>Student ID</label>
+                <input type="text" class="form-control" id="" placeholder="123XX"readonly >
+              </div>
+              <div class="col-6 mb-2">
+                <label>First Name</label>
+                <input type="text" class="form-control" placeholder="First name">
+              </div>
+              <div class="col-6 mb-2">
+                <label>Last Name</label>
+                <input type="text" class="form-control" placeholder="Last name">
+              </div>
+              <div class="col-6 mb-2" id="datepicker">
+                <label>Birth Date</label>
+                <input type="text"  class="form-control">
+              </div>
+              <div class="col-6 mb-2">
+                <label>Phone Number</label>
+                <input type="number" class="form-control" placeholder="+62">
+              </div>
+              <div class="col-12 mb-2">
+                <label>Email</label>
+                <input type="email" class="form-control" id="" placeholder="yourmail@mail.com" >
+              </div>
+              <div class="col-12">
+                <label>Password</label>
+                <input type="password" class="form-control" id="" placeholder="*******">
+                <small id="passwordHelpBlock" class="form-text text-muted">
+                  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                </small>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn bg-dark shadow" data-dismiss="modal">Close</button>
+          <button type="button" class="btn bg-yellow shadow">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#table').DataTable();
+} );
+</script>
+
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
 <script type="text/javascript" src="plugins/jsCalendar.js"></script>
 <script type="text/javascript" src="js/Chart.js"></script>
 <script type="text/javascript" src="jquery/dist/jquery.js"></script>
