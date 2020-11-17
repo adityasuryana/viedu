@@ -14,7 +14,7 @@
     <nav class="navbar bg-yellow shadow sticky-top">
       <span class="navbar-title">VIEDU</span>
       <div class="dropdown ">
-        <button type="button" class="profile-btn navbar-btn-user shadow" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button type="button" class="profile-btn navbar-btn-user shadow-sm" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <img class="navbar-img-user mr-2" src="img/user/1.jpg" alt="">
           Aditya <i class="m-2 fa fa-chevron-down"></i>
         </button>
@@ -56,7 +56,7 @@
   <section class="content">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-8 col-md-12 col-sm-12 col-12" style="margin-left:-15px;">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12" style="margin-left:-15px;">
           <div class="small-box bg-white shadow p-3 mt-3">
 
       <table id="table" class="table text-center " >
@@ -71,19 +71,19 @@
 
         <tbody>
           <tr>
-                <td>Michael Bruce</td>
+                <td>Aditya Suryana</td>
                 <td>X</td>
                 <td>Javascript Developer</td>
-                <td> <a href="#"data-toggle="modal" data-target="#details" data-toggle="tooltip" title="Details" class="btn bg-gray  m-2" style="width: 40px; color: #1c1c1e"><i class="fas fa-info"></i></a>
-                     <a href="#"data-toggle="modal" data-target="#editStudent" data-toggle="tooltip" title="Edit" class="btn bg-yellow" style="width: 40px"><i class="fas fa-edit"></i></a>
+                <td> <a href="#" data-toggle="modal" data-target="#details" data-toggle="tooltip" title="Details" class="btn bg-gray  m-2" style="width: 40px; color: #1c1c1e"><i class="fas fa-info"></i></a>
+                     <a href="#" data-toggle="modal" data-target="#editStudent" data-toggle="tooltip" title="Edit" class="btn bg-yellow" style="width: 40px"><i class="fas fa-edit"></i></a>
                 </td>
             </tr>
             <tr>
-                  <td>Michael Bruce</td>
+                  <td>Aditya Suryana</td>
                   <td>X</td>
                   <td>Javascript Developer</td>
-                  <th> <a href="#" data-toggle="tooltip" title="Details" class="btn bg-gray  m-2" style="width: 40px; color: #1c1c1e"><i class="fas fa-info"></i></a>
-                       <a href="#" data-toggle="tooltip" title="Edit" class="btn bg-yellow" style="width: 40px"><i class="fas fa-edit"></i></a>
+                  <th> <a href="#" data-toggle="modal" data-target="#details" data-toggle="tooltip" title="Details" class="btn bg-gray  m-2" style="width: 40px; color: #1c1c1e"><i class="fas fa-info"></i></a>
+                       <a href="#" data-toggle="modal" data-target="#editStudent" data-toggle="tooltip" title="Edit" class="btn bg-yellow" style="width: 40px"><i class="fas fa-edit"></i></a>
                   </th>
               </tr>
         </tbody>
@@ -100,13 +100,16 @@
       <div class="modal-content ">
         <div class="modal-header">
           <h5 class="modal-title">Add Student</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
         </div>
         <div class="modal-body">
           <form>
             <div class="form-row">
+              <div class="col-3 mb-2"></div>
+              <div class="col-6 mb-2">
+                  <img class="user-img" src="img/user/0.jpg" alt="">
+                  <a href="#" class="btn bg-gray center m-3"> <i class="fas fa-upload mr-1"></i> Upload Picture</a>
+              </div>
+              <div class="col-3 mb-2"></div>
               <div class="col-12 mb-2">
                 <label>Student ID</label>
                 <input type="text" class="form-control" id="" placeholder="123XX" >
@@ -154,13 +157,16 @@
       <div class="modal-content ">
         <div class="modal-header">
           <h5 class="modal-title">Edit Student</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
         </div>
         <div class="modal-body">
           <form>
             <div class="form-row">
+              <div class="col-3 mb-2"></div>
+              <div class="col-6 mb-2">
+                  <img class="user-img" src="img/user/1.jpg" alt="">
+                  <a href="#" class="btn bg-gray center m-3"> <i class="fas fa-upload mr-1"></i> Upload Picture</a>
+              </div>
+              <div class="col-3 mb-2"></div>
               <div class="col-12 mb-2">
                 <label>Student ID</label>
                 <input type="text" class="form-control" id="" placeholder="123XX"readonly >
@@ -198,6 +204,54 @@
         <div class="modal-footer">
           <button type="button" class="btn bg-dark shadow" data-dismiss="modal">Close</button>
           <button type="button" class="btn bg-yellow shadow">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="details" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h5 class="modal-title">Details Student</h5>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-row">
+              <div class="col-4 mb-2"></div>
+              <div class="col-4 mb-2">
+                  <img class="user-img" src="img/user/1.jpg" alt="">
+              </div>
+              <div class="col-4 mb-2"></div>
+              <div class="col-12 mb-2">
+                <label class="bg-yellow rounded pl-1 pr-1">Student ID</label>
+                <h6>123XXX</h6>
+              </div>
+              <div class="col-6 mb-2">
+                <label class="bg-yellow rounded pl-1 pr-1">First Name</label>
+                <h6>Aditya</h6>
+              </div>
+              <div class="col-6 mb-2">
+                <label class="bg-yellow rounded pl-1 pr-1">Last Name</label>
+                <h6>Suryana</h6>
+              </div>
+              <div class="col-6 mb-2" id="datepicker">
+                <label class="bg-yellow rounded pl-1 pr-1">Birth Date</label>
+                <h6>12 February 2001</h6>
+              </div>
+              <div class="col-6 mb-2">
+                <label class="bg-yellow rounded pl-1 pr-1">Phone Number</label>
+                <h6>+62 858 6414 5001</h6>
+              </div>
+              <div class="col-12 mb-2">
+                <label class="bg-yellow rounded pl-1 pr-1">Email</label>
+                <h6>adityasuryana@gmail.com</h6>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn bg-dark shadow" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>

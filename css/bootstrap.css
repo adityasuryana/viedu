@@ -183,6 +183,8 @@ samp {
   font-size: 1em;
 }
 
+
+
 pre {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -2507,6 +2509,18 @@ textarea.form-control {
   line-height: 1.5;
   border-radius: 10px;
 }
+
+input[type=file] {
+  font-weight: 500;
+  width: 100%;
+  border: none;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 
 .btn:hover {
   text-decoration: none;
@@ -5262,10 +5276,20 @@ button:focus {
 
 }
 
+.user-img {
+  display: block;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
 
 /* End Of Dashboard CSS */
 
-
+.center {
+margin: 0 auto;
+display: block;
+}
 
 .card-subtitle {
   margin-top: -0.375rem;

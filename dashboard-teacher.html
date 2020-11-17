@@ -2,63 +2,280 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Dashboard | VIEDU</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Teacher | VIEDU</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
-    <script type="text/javascript" src="js/Chart.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
     </head>
   <body>
-    <!-- Header -->
-    <section>
-  <nav class="navbar bg-yellow shadow sticky-top">
-    <span class="navbar-title">VIEDU</span>
-    <div class="dropdown ">
-      <button type="button" class="profile-btn navbar-btn-user shadow" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <img class="navbar-img-user mr-2" src="img/user/1.jpg" alt="">
-        Aditya <i class="ml-2 mr-2 fa fa-chevron-down"></i>
-      </button>
 
-      <div class="ml-3 dropdown-menu shadow">
-        <a href="#" class="dropdown-item"><i class="mr-3 fa fa-wrench"></i>Settings</a>
-        <div class="dropdown-divider"></div>
-        <a href="index.html" class="dropdown-item"><i class="mr-4 fa fa-sign-out-alt"></i>Logout</a>
+
+    <nav class="navbar bg-yellow shadow sticky-top">
+      <span class="navbar-title">VIEDU</span>
+      <div class="dropdown ">
+        <button type="button" class="profile-btn navbar-btn-user shadow-sm" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img class="navbar-img-user mr-2" src="img/user/1.jpg" alt="">
+          Aditya <i class="m-2 fa fa-chevron-down"></i>
+        </button>
+
+        <div class="ml-3 dropdown-menu shadow">
+          <a href="#" class="dropdown-item"><i class="fa fa-wrench mr-3"></i>Settings</a>
+          <div class="dropdown-divider"></div>
+          <a href="index.html" class="dropdown-item"><i class="fa fa-sign-out-alt mr-3"></i>Logout</a>
+        </div>
       </div>
-    </div>
-
-  </nav>
-</section>
-
+    </nav>
 
     <!-- Sidebar -->
-    <section>
-      <div class="sidebar bg-yellow shadow pt-5">
-        <a data-toggle="tooltip" title="Dashboard" class="mt-5 " href="dashboard-admin.html"><i class=" fas fa-fw fa-columns"></i></a>
-        <a data-toggle="tooltip" title="Student" class="mt-5 " href="dashboard-student.html"><i class=" fas fa-fw fa-users"></i></a>
-        <a data-toggle="tooltip" title="Teacher" class="mt-5 active" href="dashboard-teacher.html"><i class=" fas fa-fw fa-chalkboard-teacher"></i></a>
-        <a data-toggle="tooltip" title="File" class="mt-5" href="dashboard-file.html"><i class=" fas fa-fw fa-file-pdf"></i></a>
-        <a data-toggle="tooltip" title="Video" class="mt-5" href="dashboard-video.html"><i class=" fas fa-fw fa-video"></i></a>
-        <a data-toggle="tooltip" title="Forum" class="mt-5" href="dashboard-forum.html"><i class=" fas fa-fw fa-newspaper"></i></a>
-        <a data-toggle="tooltip" title="Report" class="mt-5" href="dashboard-report.html"><i class=" fas fa-fw fa-file-alt"></i></a>
-        </div>
-    </section>
+    <aside class="">
+    <div class="sidebar bg-yellow shadow pt-5">
+      <a data-toggle="tooltip" title="Dashboard" class="mt-5 " href="dashboard-admin.html"><i class=" fas fa-fw fa-columns"></i></a>
+      <a data-toggle="tooltip" title="Student" class="mt-5" href="dashboard-student.html"><i class=" fas fa-fw fa-users"></i></a>
+      <a data-toggle="tooltip" title="Teacher" class="mt-5 active" href="dashboard-teacher.html"><i class=" fas fa-fw fa-chalkboard-teacher"></i></a>
+      <a data-toggle="tooltip" title="File" class="mt-5" href="dashboard-file.html"><i class=" fas fa-fw fa-file-pdf"></i></a>
+      <a data-toggle="tooltip" title="Video" class="mt-5" href="dashboard-video.html"><i class=" fas fa-fw fa-video"></i></a>
+      <a data-toggle="tooltip" title="Forum" class="mt-5" href="dashboard-forum.html"><i class=" fas fa-fw fa-newspaper"></i></a>
+      <a data-toggle="tooltip" title="Report" class="mt-5" href="dashboard-report.html"><i class=" fas fa-fw fa-file-alt"></i></a>
+      </div>
+    </aside>
 
   <!-- Main Content -->
   <div class="content-header">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-12" style="margin-left: -15px !important">
           <h1 class="main-title mt-4">Teacher</h1>
         </div>
+        <a href="#" data-toggle="modal" data-target="#addTeacher" class="btn bg-yellow shadow mb-4"><i class="fas fa-user-plus mr-1"></i> Add Teacher</a>
       </div>
     </div>
   </div>
 
 
+  <section class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-12" style="margin-left:-15px;">
+          <div class="small-box bg-white shadow p-3 mt-3">
+
+      <table id="table" class="table text-center " >
+        <thead >
+          <tr>
+                <th style="border-top:none">Name</th>
+                <th style="border-top:none">Subject</th>
+                <th style="border-top:none"></th>
+            </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+                <td>Yayan Rudiyat</td>
+                <td>Physics</td>
+                <td> <a href="#" data-toggle="modal" data-target="#details" data-toggle="tooltip" title="Details" class="btn bg-gray  m-2" style="width: 40px; color: #1c1c1e"><i class="fas fa-info"></i></a>
+                     <a href="#" data-toggle="modal" data-target="#editTeacher" data-toggle="tooltip" title="Edit" class="btn bg-yellow" style="width: 40px"><i class="fas fa-edit"></i></a>
+                </td>
+            </tr>
+            <tr>
+                  <td>Paul</td>
+                  <td>Basic Programming</td>
+                  <th> <a href="#" data-toggle="modal" data-target="#details" data-toggle="tooltip" title="Details" class="btn bg-gray  m-2" style="width: 40px; color: #1c1c1e"><i class="fas fa-info"></i></a>
+                       <a href="#" data-toggle="modal" data-target="#editTeacher" data-toggle="tooltip" title="Edit" class="btn bg-yellow" style="width: 40px"><i class="fas fa-edit"></i></a>
+                  </th>
+              </tr>
+        </tbody>
+      </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
+  <div class="modal fade" id="addTeacher" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h5 class="modal-title">Add Teacher</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-row">
+              <div class="col-3 mb-2"></div>
+              <div class="col-6 mb-2">
+                  <img class="user-img" src="img/user/0.jpg" alt="">
+                  <a href="#" class="btn bg-gray center m-3"> <i class="fas fa-upload mr-1"></i> Upload Picture</a>
+              </div>
+              <div class="col-3 mb-2"></div>
+              <div class="col-12 mb-2">
+                <label>Teacher ID</label>
+                <input type="text" class="form-control" id="" placeholder="123XX" >
+              </div>
+              <div class="col-6 mb-2">
+                <label>First Name</label>
+                <input type="text" class="form-control" placeholder="First name">
+              </div>
+              <div class="col-6 mb-2">
+                <label>Last Name</label>
+                <input type="text" class="form-control" placeholder="Last name">
+              </div>
+              <div class="col-6 mb-2" id="datepicker">
+                <label>Birth Date</label>
+                <input type="text"  class="form-control">
+              </div>
+              <div class="col-6 mb-2">
+                <label>Phone Number</label>
+                <input type="number" class="form-control" placeholder="+62">
+              </div>
+              <div class="col-12 mb-2">
+                <label>Email</label>
+                <input type="email" class="form-control" id="" placeholder="yourmail@mail.com" >
+              </div>
+              <div class="col-12">
+                <label>Password</label>
+                <input type="password" class="form-control" id="" placeholder="*******">
+                <small id="passwordHelpBlock" class="form-text text-muted">
+                  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                </small>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn bg-dark shadow" data-dismiss="modal">Close</button>
+          <button type="button" class="btn bg-yellow shadow">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <div class="modal fade" id="editTeacher" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h5 class="modal-title">Edit Teacher</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-row">
+              <div class="col-3 mb-2"></div>
+              <div class="col-6 mb-2">
+                  <img class="user-img" src="img/user/1.jpg" alt="">
+                  <a href="#" class="btn bg-gray center m-3"> <i class="fas fa-upload mr-1"></i> Upload Picture</a>
+              </div>
+              <div class="col-3 mb-2"></div>
+              <div class="col-12 mb-2">
+                <label>Teacher ID</label>
+                <input type="text" class="form-control" id="" placeholder="123XX"readonly >
+              </div>
+              <div class="col-6 mb-2">
+                <label>First Name</label>
+                <input type="text" class="form-control" placeholder="First name">
+              </div>
+              <div class="col-6 mb-2">
+                <label>Last Name</label>
+                <input type="text" class="form-control" placeholder="Last name">
+              </div>
+              <div class="col-6 mb-2" id="datepicker">
+                <label>Birth Date</label>
+                <input type="text"  class="form-control">
+              </div>
+              <div class="col-6 mb-2">
+                <label>Phone Number</label>
+                <input type="number" class="form-control" placeholder="+62">
+              </div>
+              <div class="col-12 mb-2">
+                <label>Email</label>
+                <input type="email" class="form-control" id="" placeholder="yourmail@mail.com" >
+              </div>
+              <div class="col-12">
+                <label>Password</label>
+                <input type="password" class="form-control" id="" placeholder="*******">
+                <small id="passwordHelpBlock" class="form-text text-muted">
+                  Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                </small>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn bg-dark shadow" data-dismiss="modal">Close</button>
+          <button type="button" class="btn bg-yellow shadow">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="details" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h5 class="modal-title">Details Teacher</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-row">
+              <div class="col-4 mb-2"></div>
+              <div class="col-4 mb-2">
+                  <img class="user-img" src="img/user/1.jpg" alt="">
+              </div>
+              <div class="col-4 mb-2"></div>
+              <div class="col-12 mb-2">
+                <label class="bg-yellow rounded pl-1 pr-1">Teacher ID</label>
+                <h6>123XXX</h6>
+                </div>
+              <div class="col-6 mb-2">
+                <label class="bg-yellow rounded pl-1 pr-1">First Name</label>
+                <h6>Yayan</h6>
+              </div>
+              <div class="col-6 mb-2">
+                <label class="bg-yellow rounded pl-1 pr-1">Last Name</label>
+                <h6>Rudiyat</h6>
+              </div>
+              <div class="col-6 mb-2" id="datepicker">
+                <label class="bg-yellow rounded pl-1 pr-1">Birth Date</label>
+                <h6>12 February 2020</h6>
+              </div>
+              <div class="col-6 mb-2">
+                <label class="bg-yellow rounded pl-1 pr-1">Phone Number</label>
+                <h6>+62 858 6414 5566</h6>
+              </div>
+              <div class="col-12 mb-2">
+                <label class="bg-yellow rounded pl-1 pr-1">Email</label>
+                <h6>yayan@gmail.com</h6>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn bg-dark shadow" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#table').DataTable();
+} );
+</script>
+
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+<script type="text/javascript" src="plugins/jsCalendar.js"></script>
+<script type="text/javascript" src="js/Chart.js"></script>
+<script type="text/javascript" src="jquery/dist/jquery.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
   </body>
 </html>
