@@ -3179,7 +3179,7 @@ input[type="button"].btn-block {
   z-index: 1000;
   display: none;
   float: left;
-  min-width: auto;
+  width: 145.44px;
   padding: 0.5rem 0;
   margin: 5px 10px 0px 10px;
   font-size: 1rem;
@@ -3370,8 +3370,9 @@ input[type="button"].btn-block {
 
 .dropdown-item {
   display: block;
-  width: 100%;
-  padding: 0.25rem 1.5rem;
+  width: 80%;
+  margin-left: 15px;
+  padding: 0.25rem 0rem;
   clear: both;
   font-weight: 500;
   color: #212529;
