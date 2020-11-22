@@ -2499,6 +2499,11 @@ textarea.form-control {
   }
 }
 
+.time {
+  height: 27px;
+  width: 49px;
+}
+
 .btn {
   display: inline-block;
   font-weight: 500;
@@ -6578,7 +6583,7 @@ a.close.disabled {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 1rem 1rem;
-  border: none;
+  border-bottom: 1px #dae0e5 solid;
 }
 
 .modal-header .close {
@@ -10655,6 +10660,10 @@ a.text-light:hover, a.text-light:focus {
   color: #cbd3da !important;
 }
 
+.text-gray {
+  color :#dae0e5;
+}
+
 .text-dark {
   color: #343a40 !important;
 }
@@ -10787,9 +10796,20 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
-/*# sourceMappingURL=bootstrap.css.map */
 
+.search {
+  padding: 0px 10px;
+  background-color: #fff ;
+  border-radius: 10px;
+  border: none;
+  display: block;
+  width: 300px;
+  height: 36px;
+}
 
+.search:focus {
+  outline: none;
+}
 
 .small-box {
   border-radius: 10px;
