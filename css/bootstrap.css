@@ -5167,7 +5167,6 @@ button:focus {
 
 .card-info {
     display: block;
-
     position: relative;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -5306,11 +5305,16 @@ button:focus {
   color: #1c1c1e;
   font-weight: bold;
   padding: 5px 10px;
-
 }
 
 .header-forum:hover {
   text-decoration: none;
+  background-color: #FFD082;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.head-active {
   background-color: #FFD082;
   border-radius: 10px;
   padding: 5px 10px;
