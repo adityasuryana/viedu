@@ -3389,6 +3389,7 @@ input[type="button"].btn-block {
   white-space: nowrap;
   background-color: transparent;
   border: 0;
+
 }
 
 .dropdown-item:hover, .dropdown-item:focus {
@@ -5314,6 +5315,18 @@ button:focus {
   border-radius: 10px;
   padding: 5px 10px;
 }
+
+.category {
+  display: flex;
+  flex-direction: column;
+}
+
+.category-item {
+  color: #1c1c1e;
+  margin-top: 8px;
+}
+
+
 
 /* End Of Dashboard CSS */
 
