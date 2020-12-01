@@ -5301,6 +5301,20 @@ button:focus {
   margin: 0 auto;
 }
 
+.header-forum {
+  color: #1c1c1e;
+  font-weight: bold;
+  padding: 5px 10px;
+
+}
+
+.header-forum:hover {
+  text-decoration: none;
+  background-color: #FFD082;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
 /* End Of Dashboard CSS */
 
 .center {

@@ -48,7 +48,7 @@
           <h1 class="main-title mt-4">Forum</h1>
         </div>
         <form class="form-inline" >
-          <input class="search shadow m-2" id="search" placeholder="Search">
+          <input class="search shadow p-3 m-2" id="search" placeholder="Search">
           <button type="submit" class="btn bg-dark shadow-sm m-2" name="button">Search</button>
           <a href="#" data-toggle="modal" data-target="#addVideo" class="btn bg-yellow shadow-sm ml-4"><i class="fas fa-plus mr-1"></i> Create Thread</a>
         </form>
@@ -60,7 +60,23 @@
     <div class="container-fluid">
       <div class="row mt-4">
 
-        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" >
+        <div class="col-12">
+          <div class="small-box bg-white shadow p-2 mt-3">
+            <div class="d-flex">
+              <a href="#" class="header-forum ">Latest</a>
+              <a href="#" class="header-forum ml-4">Hot</a>
+              <a href="#" class="header-forum ml-4">Views</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-2">
+          <div class="small-box bg-white shadow p-3 mt-3 text-left">
+            <h5><b>Category</b></h5>
+          </div>
+        </div>
+
+        <div class="col-lg-7 col-md-8 col-sm-12 col-xs-12" >
           <div class="small-box bg-white shadow p-3 mt-3 text-left" data-string="Object Oriented Programming #1">
 
               <div class="dropdown">
@@ -72,14 +88,14 @@
               </div>
                 <img class="forum-thumb m-4" src="img/focus.png">
               <div class=" col-9">
-                <a href="#" class="text-dark text-justify  decor-none" ><h5 id="title" class="mt-2"> How to manage your anger </h5></a>
+                <a href="#" class="text-dark text-justify  decor-none" ><h5 id="title" class="mt-2"> How to Manage Your Anger </h5></a>
                 <div class="d-flex">
                   <h6>by <a href="#" class="text-dark"><b>Sandhika Galih</b></a></h6>
                   <p class="ml-2" style="font-size: 20px; margin-top: -5px;">&#10072;</p>
                   <a href="#" class="text-dark ml-2"><p >How to & Self Improvement</p></a>
                 </div>
 
-                <div class="mt-4 d-flex">
+                <div class="mt-4 d-flex text-center">
                   <a href="#" class="text-dark"><h6><i class="fas fa-reply mr-2"></i> reply</h6></a>
                   <h6><i class="fas fa-eye ml-4 mr-2"></i> 1.2K views</h6>
                   <a href="#" class="text-dark"><h6><i class="fas fa-share-alt ml-4 mr-2"></i> share</h6></a>
@@ -106,7 +122,7 @@
                     <a href="#" class="text-dark ml-2"><p >How to & Self Improvement</p></a>
                   </div>
 
-                  <div class="mt-4 d-flex">
+                  <div class="mt-4 d-flex text-center">
                     <a href="#" class="text-dark"><h6><i class="fas fa-reply mr-2"></i> reply</h6></a>
                     <h6><i class="fas fa-eye ml-4 mr-2"></i> 1.2K views</h6>
                     <a href="#" class="text-dark"><h6><i class="fas fa-share-alt ml-4 mr-2"></i> share</h6></a>
@@ -116,11 +132,11 @@
               </div>
           </div>
 
-          <div class="col-3">
+          <div class="col-lg-3 col-md-4">
             <div class="small-box bg-white shadow p-3 mt-3 text-left">
               <h5 class="pb-2"><b>Hot</b> Thread</h5>
               <div class="border-top p-3">
-                <a href="#" class="text-dark text-justify" ><h6 id="title" class="">How to manage your anger</h6></a>
+                <a href="#" class="text-dark text-justify" ><h6 id="title" class="">How to Manage Your Anger</h6></a>
                 <p>by <a href="#" class="text-dark"><b>Sandhika Galih</b></a></p>
               </div>
               <div class="border-top p-3">
@@ -129,7 +145,6 @@
               </div>
             </div>
           </div>
-
 
     </div>
   </div>
