@@ -5618,8 +5618,8 @@ display: block;
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #1c1c1e;
+  border-color: #fff;
 }
 
 .page-item.disabled .page-link {
@@ -10847,7 +10847,7 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 10px;
   border: none;
   display: block;
-  width: 300px;
+  width: 400px;
   height: 36px;
 }
 
