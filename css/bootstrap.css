@@ -4236,13 +4236,17 @@ input[type="button"].btn-block {
   list-style: none;
 }
 
+
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  color: #1c1c1e;
+  text-align: center;
 }
 
 .nav-link:hover, .nav-link:focus {
   text-decoration: none;
+  background-color: #ffd082;
 }
 
 .nav-link.disabled {
@@ -4265,6 +4269,7 @@ input[type="button"].btn-block {
   border-top-right-radius: 0.25rem;
 }
 
+
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
   border-color: #e9ecef #e9ecef #dee2e6;
 }
@@ -4278,7 +4283,7 @@ input[type="button"].btn-block {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-  background-color: #fff;
+  background-color: #;
   border-color: #dee2e6 #dee2e6 #fff;
 }
 
@@ -4289,13 +4294,13 @@ input[type="button"].btn-block {
 }
 
 .nav-pills .nav-link {
-  border-radius: 0.25rem;
+  border-radius: 10px;
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #007bff;
+  color: #1c1c1e;
+  background-color: #ffd082;
 }
 
 .nav-fill > .nav-link,
