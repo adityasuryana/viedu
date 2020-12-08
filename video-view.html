@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Video | VIEDU</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+    </head>
+  <body>
+
+
+    <nav class="navbar bg-yellow shadow sticky-top">
+      <span class="navbar-title">VIEDU</span>
+      <div class="dropdown ">
+        <button type="button" class="profile-btn navbar-btn-user shadow-sm" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img class="navbar-img-user mr-2" src="img/user/1.jpg" alt="">
+          Aditya <i class="m-2 fa fa-chevron-down"></i>
+        </button>
+
+        <div class="ml-3 dropdown-menu shadow">
+          <a href="#" class="dropdown-item"><i class="fa fa-wrench pl-2 mr-3"></i>Settings</a>
+          <div class="dropdown-divider"></div>
+          <a href="index.html" class="dropdown-item"><i class="fa fa-sign-out-alt pl-2 mr-3"></i>Logout</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <aside class="">
+    <div class="sidebar bg-yellow shadow pt-5">
+      <a data-toggle="tooltip" title="Dashboard" class="mt-5 " href="dashboard-admin.html"><i class=" fas fa-fw fa-columns"></i></a>
+      <a data-toggle="tooltip" title="Student" class="mt-5" href="dashboard-student.html"><i class=" fas fa-fw fa-users"></i></a>
+      <a data-toggle="tooltip" title="Teacher" class="mt-5 " href="dashboard-teacher.html"><i class=" fas fa-fw fa-chalkboard-teacher"></i></a>
+      <a data-toggle="tooltip" title="File" class="mt-5 " href="dashboard-file.html"><i class=" fas fa-fw fa-file-pdf"></i></a>
+      <a data-toggle="tooltip" title="Video" class="mt-5 active" href="dashboard-video.html"><i class=" fas fa-fw fa-video"></i></a>
+      <a data-toggle="tooltip" title="Forum" class="mt-5" href="dashboard-forum.html"><i class=" fas fa-fw fa-newspaper"></i></a>
+      <!--  <a data-toggle="tooltip" title="Report" class="mt-5" href="dashboard-report.html"><i class=" fas fa-fw fa-file-alt"></i></a> -->
+      </div>
+    </aside>
+
+  <!-- Main Content -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mt-4">
+        <div class="col-lg-4 col-md-2 col-12"></div>
+
+          <a data-toggle="tooltip" title="Back" href="dashboard-video.html" class="btn bg-yellow shadow-sm mt-2 ml-3"><i class="fas fa-arrow-left"></i> </a>
+          <input  class="search shadow p-3 ml-3 mt-2" placeholder="Search">
+          <button type="submit" class="btn bg-dark shadow-sm ml-3 mt-2" name="button">Search</button>
+
+          <div class="col-lg-4 col-md-2 col-12"></div>
+      </div>
+    </div>
+  </div>
+
+  <section class="content">
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-lg-12">
+
+          <div class="small-box bg-white shadow p-3 mt-3 text-left" data-string="Object Oriented Programming #1">
+            <div class="embed-responsive embed-responsive-21by9 shadow rounded-lg mb-4" >
+              <iframe  width="560" height="250" src="https://www.youtube.com/embed/ZKDUFoouyBI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+              <div class="dropdown">
+                <button id="dropdownVideo" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" class="float-right mt-2 text-dark border-0 bg-white"> <i class="fas fa-ellipsis-v"></i> </button>
+                <div class=" dropdown-menu shadow-lg" style="margin-left: -120px;">
+                  <a href="#" class="dropdown-item "><i class="fa fa-edit pl-2 mr-3"></i>Edit</a>
+                  <a href="#" class="dropdown-item "><i class="fa fa-trash pl-2 mr-3"></i>Delete</a>
+                </div>
+              </div>
+
+              <h5 id="title" class="text-dark mt-2">Object Oriented Programming #1</h5>
+              <h6>by <a href="#" class="text-dark"><b>Sandhika Galih</b></a></h6>
+              <div class="d-flex">
+                <h6> <i class="fas fa-eye mr-1 mt-1"></i> 1.2K views</h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 mt-3">
+            <div class="p-3">
+              <div class="d-flex mb-2">
+                <a href="#"><img class="navbar-img-user mr-2" src="img/user/1.jpg"></a>
+                <a class="text-dark" href="#"><h6 class="pt-2" style="font-size: 19px">Aditya Suryana</h6></a>
+              </div>
+              <textarea class="text-justify border rounded p-2 mt-2" style="width: 100%" name="name" placeholder="Send your opinion!" ></textarea>
+              <div class="d-flex justify-content-end">
+                <button class="btn bg-dark shadow-sm mt-2 mr-3" type="button" name="button">Cancel</button>
+                <button class="btn bg-yellow shadow-sm mt-2" type="button" name="button">Send</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12 overflow-auto mt-3" style="max-height: 1000px; box-shadow: none">
+
+            <div class=" p-3" style="">
+              <h5 class="bg-dark text-white border-bottom p-3 mb-3 rounded"><b>Discussion</b></h5>
+
+                <div class="small-box shadow-sm bg-white text-left p-2 text-dark ">
+                  <div class="d-flex">
+                    <a href="#"><img class="navbar-img-user mr-2" src="img/user/1.jpg"></a>
+                    <a class="text-dark" href="#"><h6 class="pt-2" style="font-size: 19px">Aditya Suryana</h6></a>
+                  </div>
+                    <p class="text-justify mt-2 ml-5 mr-4">This is a good content! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div class="small-box shadow-sm bg-white text-left p-2 text-dark ">
+                  <div class="d-flex">
+                    <a href="#"><img class="navbar-img-user mr-2" src="img/user/1.jpg"></a>
+                    <a class="text-dark" href="#"><h6 class="pt-2" style="font-size: 19px">Aditya Suryana</h6></a>
+                  </div>
+                    <p class="text-justify mt-2 ml-5 mr-4">This is a good content! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div class="small-box shadow-sm bg-white text-left p-2 text-dark ">
+                  <div class="d-flex">
+                    <a href="#"><img class="navbar-img-user mr-2" src="img/user/1.jpg"></a>
+                    <a class="text-dark" href="#"><h6 class="pt-2" style="font-size: 19px">Aditya Suryana</h6></a>
+                  </div>
+                    <p class="text-justify mt-2 ml-5 mr-4">This is a good content! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div class="small-box shadow-sm bg-white text-left p-2 text-dark ">
+                  <div class="d-flex">
+                    <a href="#"><img class="navbar-img-user mr-2" src="img/user/1.jpg"></a>
+                    <a class="text-dark" href="#"><h6 class="pt-2" style="font-size: 19px">Aditya Suryana</h6></a>
+                  </div>
+                    <p class="text-justify mt-2 ml-5 mr-4">This is a good content! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div class="small-box shadow-sm bg-white text-left p-2 text-dark ">
+                  <div class="d-flex">
+                    <a href="#"><img class="navbar-img-user mr-2" src="img/user/1.jpg"></a>
+                    <a class="text-dark" href="#"><h6 class="pt-2" style="font-size: 19px">Aditya Suryana</h6></a>
+                  </div>
+                    <p class="text-justify mt-2 ml-5 mr-4">This is a good content! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div class="small-box shadow-sm bg-white text-left p-2 text-dark ">
+                  <div class="d-flex">
+                    <a href="#"><img class="navbar-img-user mr-2" src="img/user/1.jpg"></a>
+                    <a class="text-dark" href="#"><h6 class="pt-2" style="font-size: 19px">Aditya Suryana</h6></a>
+                  </div>
+                    <p class="text-justify mt-2 ml-5 mr-4">This is a good content! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+          </div>
+
+
+
+    </div>
+  </div>
+</section>
+
+
+
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+<script type="text/javascript" src="plugins/jsCalendar.js"></script>
+<script type="text/javascript" src="js/Chart.js"></script>
+<script type="text/javascript" src="jquery/dist/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+  </body>
+</html>
