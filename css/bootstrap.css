@@ -5331,10 +5331,21 @@ button:focus {
 }
 
 .category-item {
+  padding: 5px;
   color: #1c1c1e;
   margin-top: 8px;
 }
 
+.category-item:hover {
+  border-radius: 8px;
+  background-color: #ffd082;
+  text-decoration: none;
+}
+
+.category-item:focus {
+  border-radius: 8px;
+  background-color: #ffd082;
+}
 
 
 /* End Of Dashboard CSS */

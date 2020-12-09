@@ -75,8 +75,9 @@
 
               <h5 id="title" class="text-dark mt-2">Object Oriented Programming #1</h5>
               <h6>by <a href="#" class="text-dark"><b>Sandhika Galih</b></a></h6>
-              <div class="d-flex">
-                <h6> <i class="fas fa-eye mr-1 mt-1"></i> 1.2K views</h6>
+              <div class="d-flex mt-3">
+                <h6><i class="fas fa-eye mr-1"></i> 1.2K views</h6>
+                <a href="#" data-toggle="modal" data-target="#share" class="text-dark"><h6><i class="fas fa-share-alt ml-4 mr-2"></i> share</h6></a>
               </div>
             </div>
           </div>
@@ -87,7 +88,7 @@
                 <a href="#"><img class="navbar-img-user mr-2" src="img/user/1.jpg"></a>
                 <a class="text-dark" href="#"><h6 class="pt-2" style="font-size: 19px">Aditya Suryana</h6></a>
               </div>
-              <textarea class="text-justify border rounded p-2 mt-2" style="width: 100%" name="name" placeholder="Send your opinion!" ></textarea>
+              <textarea class="text-justify border rounded p-2 mt-2" style="width: 100%; min-height: 50px" name="name" placeholder="Send your opinion!" ></textarea>
               <div class="d-flex justify-content-end">
                 <button class="btn bg-dark shadow-sm mt-2 mr-3" type="button" name="button">Cancel</button>
                 <button class="btn bg-yellow shadow-sm mt-2" type="button" name="button">Send</button>
@@ -156,7 +157,52 @@
   </div>
 </section>
 
+<div class="modal fade" data-backdrop="static" id="share" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <h5 class="modal-title">Share</h5>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-row">
+            <div class="col-12 mb-2">
+              <div class="d-flex">
+                <div class="d-block text-center mr-3">
+                  <a href="#" class="btn bg-yellow rounded-circle shadow-sm p-3"><i class="fab fa-whatsapp" style="font-size: 25px; font-weight: 800"></i></a>
+                  <label class="d-block mt-1">WhatsApp</label>
+                </div>
+                <div class="d-block text-center mr-3">
+                  <a href="#" class="btn bg-yellow rounded-circle shadow-sm p-3"><i class="fab fa-twitter" style="font-size: 25px"></i></a>
+                  <label class="d-block mt-1">Twitter</label>
+                </div>
+                <div class="d-block text-center mr-3">
+                <a href="#" class="btn bg-yellow rounded-circle shadow-sm p-3"><i class="fab fa-facebook" style="font-size: 25px"></i></a>
+                <label class="d-block mt-1">Facebook</label>
+              </div>
+              <div class="d-block text-center mr-3">
+                <a href="#" class="btn bg-yellow rounded-circle shadow-sm p-3"><i class="fab fa-blogger" style="font-size: 25px"></i></a>
+                <label class="d-block mt-1">Blogger</label>
+              </div>
 
+              </div>
+            </div>
+            <div class="col-12 mt-2 mb-2">
+              <label>Url</label>
+              <div class="d-flex">
+                <input type="text" class="form-control" id="" value="https://adityasuryana.github.io/viedu/dashboard-forum/how-to-manage-your-anger" readonly>
+                <button onclick="copy()" class="btn bg-yellow shadow-sm ml-2 mr-3">Copy</button>
+              </div>
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn bg-dark shadow" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
 <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>

@@ -51,7 +51,7 @@
 
           <input class="search shadow p-3 ml-3  mt-2" placeholder="Search">
           <button type="submit" class="btn bg-dark shadow-sm ml-3 mt-2" name="button">Search</button>
-          <a href="#" data-toggle="modal" data-target="#addVideo" class="btn bg-yellow shadow-sm ml-4 mt-2"><i class="fas fa-plus mr-1"></i> Thread</a>
+          <a href="#" class="btn bg-yellow shadow-sm ml-4 mt-2"><i class="fas fa-plus mr-1"></i> Thread</a>
 
       </div>
     </div>
@@ -66,11 +66,12 @@
           <div class="small-box bg-white shadow p-3 mt-3 text-left" >
             <h5 class="border-bottom pb-3"><b>Category</b></h5>
             <div class="category" style="">
+              <a href="#" class="category-item ">All</a>
               <a href="#" class="category-item">Blog & People</a>
               <a href="#" class="category-item">Computers</a>
               <a href="#" class="category-item">Design</a>
               <a href="#" class="category-item">Education</a>
-              <a href="#" class="category-item">How to & Self Improvement</a>
+              <a href="#" class="category-item category-item-active">How to & Self Improvement</a>
               <a href="#" class="category-item">Music</a>
               <a href="#" class="category-item">School</a>
               <a href="#" class="category-item">Science & Technology</a>
@@ -115,7 +116,7 @@
                 <div class="d-flex text-center mt-4">
                   <a href="#" class="text-dark"><h6><i class="fas fa-reply mr-2"></i> reply</h6></a>
                   <h6><i class="fas fa-eye ml-4 mr-2"></i> 1.2K views</h6>
-                  <a href="#" class="text-dark"><h6><i class="fas fa-share-alt ml-4 mr-2"></i> share</h6></a>
+                  <a href="#" data-toggle="modal" data-target="#share" class="text-dark"><h6><i class="fas fa-share-alt ml-4 mr-2"></i> share</h6></a>
                 </div>
             </div>
 
@@ -143,7 +144,7 @@
                 <div class="d-flex text-center mt-4">
                   <a href="#" class="text-dark"><h6><i class="fas fa-reply mr-2"></i> reply</h6></a>
                   <h6><i class="fas fa-eye ml-4 mr-2"></i> 1.2K views</h6>
-                  <a href="#" class="text-dark"><h6><i class="fas fa-share-alt ml-4 mr-2"></i> share</h6></a>
+                  <a href="#" data-toggle="modal" data-target="#share" class="text-dark"><h6><i class="fas fa-share-alt ml-4 mr-2"></i> share</h6></a>
                 </div>
             </div>
 
@@ -171,7 +172,7 @@
                 <div class="d-flex text-center mt-4">
                   <a href="#" class="text-dark"><h6><i class="fas fa-reply mr-2"></i> reply</h6></a>
                   <h6><i class="fas fa-eye ml-4 mr-2"></i> 1.2K views</h6>
-                  <a href="#" class="text-dark"><h6><i class="fas fa-share-alt ml-4 mr-2"></i> share</h6></a>
+                  <a href="#" data-toggle="modal" data-target="#share" class="text-dark"><h6><i class="fas fa-share-alt ml-4 mr-2"></i> share</h6></a>
                 </div>
             </div>
 
@@ -199,7 +200,7 @@
                 <div class="d-flex text-center mt-4">
                   <a href="#" class="text-dark"><h6><i class="fas fa-reply mr-2"></i> reply</h6></a>
                   <h6><i class="fas fa-eye ml-4 mr-2"></i> 1.2K views</h6>
-                  <a href="#" class="text-dark"><h6><i class="fas fa-share-alt ml-4 mr-2"></i> share</h6></a>
+                  <a href="#" data-toggle="modal" data-target="#share" class="text-dark"><h6><i class="fas fa-share-alt ml-4 mr-2"></i> share</h6></a>
                 </div>
             </div>
 
@@ -227,7 +228,7 @@
                 <div class="d-flex text-center mt-4">
                   <a href="#" class="text-dark"><h6><i class="fas fa-reply mr-2"></i> reply</h6></a>
                   <h6><i class="fas fa-eye ml-4 mr-2"></i> 1.2K views</h6>
-                  <a href="#" class="text-dark"><h6><i class="fas fa-share-alt ml-4 mr-2"></i> share</h6></a>
+                  <a href="#" data-toggle="modal" data-target="#share" class="text-dark"><h6><i class="fas fa-share-alt ml-4 mr-2"></i> share</h6></a>
                 </div>
             </div>
 
@@ -266,44 +267,47 @@
 </section>
 
 
-  <div class="modal fade" id="addVideo" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
+  <div class="modal fade" data-backdrop="static" id="share" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content ">
         <div class="modal-header">
-          <h5 class="modal-title">Add Video</h5>
+          <h5 class="modal-title">Share</h5>
         </div>
         <div class="modal-body">
           <form>
             <div class="form-row">
               <div class="col-12 mb-2">
-                <label>Title</label>
-                <input type="text" class="form-control" id="" placeholder="Title" >
+                <div class="d-flex">
+                  <div class="d-block text-center mr-3">
+                    <a href="#" class="btn bg-yellow rounded-circle shadow-sm p-3"><i class="fab fa-whatsapp" style="font-size: 25px; font-weight: 800"></i></a>
+                    <label class="d-block mt-1">WhatsApp</label>
+                  </div>
+                  <div class="d-block text-center mr-3">
+                    <a href="#" class="btn bg-yellow rounded-circle shadow-sm p-3"><i class="fab fa-twitter" style="font-size: 25px"></i></a>
+                    <label class="d-block mt-1">Twitter</label>
+                  </div>
+                  <div class="d-block text-center mr-3">
+                  <a href="#" class="btn bg-yellow rounded-circle shadow-sm p-3"><i class="fab fa-facebook" style="font-size: 25px"></i></a>
+                  <label class="d-block mt-1">Facebook</label>
+                </div>
+                <div class="d-block text-center mr-3">
+                  <a href="#" class="btn bg-yellow rounded-circle shadow-sm p-3"><i class="fab fa-blogger" style="font-size: 25px"></i></a>
+                  <label class="d-block mt-1">Blogger</label>
+                </div>
+
+                </div>
               </div>
-              <div class="col-12 mb-2" id="">
-                <label>Description</label>
-                <textarea class="form-control" name="name" rows="auto" cols="55" placeholder="Description"></textarea>
+              <div class="col-12 mt-2 mb-2">
+                <label>Url</label>
+                <div class="d-flex">
+                  <input type="text" class="form-control" id="" value="https://adityasuryana.github.io/viedu/dashboard-forum/how-to-manage-your-anger" readonly>
+                  <button onclick="copy()" class="btn bg-yellow shadow-sm ml-2 mr-3">Copy</button>
+                </div>
               </div>
-              <div class="col-12 mb-2">
-                <label>Category</label>
-                <select class="custom-select my-1 mr-sm-2">
-                  <option disabled selected>Select Category</option>
-                  <option>Education</option>
-                  <option>Science & Technology</option>
-                  <option>Blog & People</option>
-                  <option>Sport</option>
-                  <option>Music</option>
-                  <option>Travel</option>
-                </select>
-            </div>
-            <div class="col-12 mb-2">
-              <label>Upload Video</label>
-              <input type="file" style="" class="bg-gray" name="" >
-            </div>
           </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn bg-dark shadow" data-dismiss="modal">Close</button>
-          <button type="button" class="btn bg-yellow shadow">Submit</button>
         </div>
       </div>
     </div>
