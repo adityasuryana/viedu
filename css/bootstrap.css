@@ -10865,9 +10865,11 @@ a.text-dark:hover, a.text-dark:focus {
   display: block;
   width: 400px;
   height: 36px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 }
 
 .search:focus {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   outline: none;
 }
 
