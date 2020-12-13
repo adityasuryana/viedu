@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Aditya Suryana | VIEDU</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css">
+  </head>
+
+  <body>
+    <nav class="navbar bg-yellow shadow sticky-top">
+      <span class="navbar-title">VIEDU</span>
+      <div class="dropdown ">
+        <button type="button" class="profile-btn navbar-btn-user shadow-sm" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img class="navbar-img-user mr-2" src="img/user/1.jpg" alt="">
+          Aditya <i class="m-2 fa fa-chevron-down"></i>
+        </button>
+
+        <div class="ml-3 dropdown-menu shadow">
+          <a href="#" class="dropdown-item"><i class="fa fa-wrench pl-2 mr-3"></i>Settings</a>
+          <div class="dropdown-divider"></div>
+          <a href="index.html" class="dropdown-item"><i class="fa fa-sign-out-alt pl-2 mr-3"></i>Logout</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <aside class="">
+    <div class="sidebar bg-yellow shadow pt-5">
+      <a data-toggle="tooltip" title="Dashboard" class="mt-5" href="dashboard-admin.html"><i class=" fas fa-fw fa-columns"></i></a>
+      <a data-toggle="tooltip" title="Student" class="mt-5" href="dashboard-student.html"><i class=" fas fa-fw fa-users"></i></a>
+      <a data-toggle="tooltip" title="Teacher" class="mt-5" href="dashboard-teacher.html"><i class=" fas fa-fw fa-chalkboard-teacher"></i></a>
+      <a data-toggle="tooltip" title="File" class="mt-5" href="dashboard-file.html"><i class=" fas fa-fw fa-file-pdf"></i></a>
+      <a data-toggle="tooltip" title="Video" class="mt-5" href="dashboard-video.html"><i class=" fas fa-fw fa-video"></i></a>
+      <a data-toggle="tooltip" title="Forum" class="mt-5" href="dashboard-forum.html"><i class=" fas fa-fw fa-newspaper"></i></a>
+      <!--  <a data-toggle="tooltip" title="Report" class="mt-5" href="dashboard-report.html"><i class=" fas fa-fw fa-file-alt"></i></a> -->
+      </div>
+    </aside>
+
+  <!-- Main Content -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row small-box bg-dark shadow-sm mt-4" style="height: 280px;">
+
+        <div class="col-lg-1 col-md-1"></div>
+
+         <div class="col-lg-10 col-md-10 mt-5" >
+
+             <div class="d-flex text-left mt-2">
+               <img src="img/user/1.jpg" class="navbar-img-user mr-4 " style="height: 150px; width: 150px;">
+               <div class="d-inline-block text-wrap ml-1 mt-1 ">
+                 <h6 style="font-size: 4vmin">Aditya Suryana</h6>
+                 <h6 class="pt-2">Student ID : 813456381</h6>
+                 <h6>Software Engineering</h6>
+                 <h6></h6>
+               </div>
+             </div>
+
+         </div>
+
+          <div class="col-lg-1 col-md-1"></div>
+
+      </div>
+    </div>
+  </div>
+
+  <section class="content">
+    <div class="container-fluid">
+      <div class="row">
+
+
+    </div>
+  </div>
+</section>
+
+<div class="modal fade" data-backdrop="static" id="share" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content ">
+      <div class="modal-header">
+        <h5 class="modal-title">Share</h5>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-row">
+            <div class="col-12 mb-2">
+              <div class="d-flex">
+                <div class="d-block text-center mr-3">
+                  <a href="#" class="btn bg-yellow rounded-circle shadow-sm p-3"><i class="fab fa-whatsapp" style="font-size: 25px; font-weight: 800"></i></a>
+                  <label class="d-block mt-1">WhatsApp</label>
+                </div>
+                <div class="d-block text-center mr-3">
+                  <a href="#" class="btn bg-yellow rounded-circle shadow-sm p-3"><i class="fab fa-twitter" style="font-size: 25px"></i></a>
+                  <label class="d-block mt-1">Twitter</label>
+                </div>
+                <div class="d-block text-center mr-3">
+                <a href="#" class="btn bg-yellow rounded-circle shadow-sm p-3"><i class="fab fa-facebook" style="font-size: 25px"></i></a>
+                <label class="d-block mt-1">Facebook</label>
+              </div>
+              <div class="d-block text-center mr-3">
+                <a href="#" class="btn bg-yellow rounded-circle shadow-sm p-3"><i class="fab fa-blogger" style="font-size: 25px"></i></a>
+                <label class="d-block mt-1">Blogger</label>
+              </div>
+
+              </div>
+            </div>
+            <div class="col-12 mt-2 mb-2">
+              <label>Url</label>
+              <div class="d-flex">
+                <input type="text" class="form-control" id="" value="https://adityasuryana.github.io/viedu/dashboard-forum/how-to-manage-your-anger" readonly>
+                <button onclick="copy()" class="btn bg-yellow shadow-sm ml-2 mr-3">Copy</button>
+              </div>
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn bg-dark shadow" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+<script type="text/javascript" src="plugins/jsCalendar.js"></script>
+<script type="text/javascript" src="js/Chart.js"></script>
+<script type="text/javascript" src="jquery/dist/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+  </body>
+</html>
