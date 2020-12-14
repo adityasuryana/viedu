@@ -4234,12 +4234,13 @@ input[type="button"].btn-block {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  border-radius: 10px;
 }
 
 
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 5px 10px;
   color: #1c1c1e;
   text-align: center;
 }
@@ -4295,12 +4296,15 @@ input[type="button"].btn-block {
 
 .nav-pills .nav-link {
   border-radius: 10px;
+  font-weight: bold;
+
 }
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #1c1c1e;
   background-color: #ffd082;
+  font-weight: bold;
 }
 
 .nav-fill > .nav-link,
@@ -5112,6 +5116,14 @@ button:focus {
   overflow-y: hidden;
 }
 
+.user-cover {
+  height: 280px;
+  background: linear-gradient(to right,#000 5%,rgba(000,000,000,.25) 50%,rgba(000,000,000,.1) 80%,rgba(000,000,000,0) 100%);
+  background-image: url(../img/background1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+
+}
 
 /* Style sidebar links */
 .sidebar a {
@@ -5130,6 +5142,13 @@ button:focus {
   width: auto;
   background-color: #fff;
   border-radius: 10px;
+}
+
+.sidebar a.active {
+  margin: 10px;
+  box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  background-color: #fff;
 }
 
 .sidebar a:focus {
@@ -5159,14 +5178,11 @@ button:focus {
 }
 
 .active {
-  margin: 10px;
+
   text-align: center;
   color: #1c1c1e;
   width: auto;
   height: auto;
-  border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.16);
   z-index: 0
 }
 
