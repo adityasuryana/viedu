@@ -4296,8 +4296,6 @@ input[type="button"].btn-block {
 
 .nav-pills .nav-link {
   border-radius: 10px;
-  font-weight: bold;
-
 }
 
 .nav-pills .nav-link.active,
@@ -5119,7 +5117,7 @@ button:focus {
 .user-cover {
   height: 280px;
   background: linear-gradient(to right,#000 5%,rgba(000,000,000,.25) 50%,rgba(000,000,000,.1) 80%,rgba(000,000,000,0) 100%);
-  background-image: url(../img/background1.jpg);
+  background-image: url(../img/cover2.jpg);
   background-size: cover;
   background-attachment: fixed;
 
