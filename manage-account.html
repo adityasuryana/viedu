@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard | VIEDU</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="plugins/jsCalendar.css">
+
+ </head>
+
+  <body>
+
+    <!-- Navbar -->
+      <nav class="navbar bg-yellow shadow sticky-top">
+        <span class="navbar-title">VIEDU</span>
+        <div class="dropdown ">
+          <button type="button" class="profile-btn navbar-btn-user shadow-sm" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img class="navbar-img-user mr-2" src="img/user/1.jpg" alt="">
+            Aditya <i class="m-2 fa fa-chevron-down"></i>
+          </button>
+
+          <div class="ml-3 dropdown-menu shadow">
+            <a href="#" class="dropdown-item"><i class="fa fa-user-circle pl-2 mr-3"></i>Account</a>
+            <div class="dropdown-divider"></div>
+            <a href="index.html" class="dropdown-item"><i class="fa fa-sign-out-alt pl-2 mr-3"></i>Logout</a>
+          </div>
+        </div>
+      </nav>
+
+<div class="content-wrapper">
+
+  <!--   -->
+  <div class="content">
+    <div class="container">
+      <div class="row mt-3" style="margin-left: 0px; margin-right: 0px">
+        <div class="col-sm-12">
+          <h1 class="main-title mt-3">Manage Account</h1>
+        </div>
+        <div class="col-3">
+          <div class="nav flex-column nav-pills bg-white border p-2 mb-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link text-left mt-2 mb-2 active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="true">Profile</a>
+            <a class="nav-link text-left mb-2" id="v-pills-contact-tab" data-toggle="pill" href="#v-pills-contact" role="tab" aria-controls="v-pills-contact" aria-selected="false">Contact</a>
+            <a class="nav-link text-left mb-2" id="v-pills-password-tab" data-toggle="pill" href="#v-pills-password" role="tab" aria-controls="v-pills-password" aria-selected="false">Password</a>
+            <a class="nav-link text-left mb-2" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+          </div>
+          <a class="text-dark ml-2" href="dashboard-admin.html"><i class="fas fa-chevron-left pr-2"></i>Dashboard</a>
+        </div>
+        <div class="col-9 ">
+          <div class="tab-content bg-white border p-2 rounded-lg mb-5" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+              <img src="img/user/1.jpg" class="rounded-lg mt-2" alt="..." style="height: 200px; width: 200px;">
+
+              <div class="media p-3">
+                <div class="media-body text-left">
+                  <h5 class="font-weight-bolder bg-dark rounded-lg p-2 mr-2 mt-0 mb-2"> <i class="fas fa-info-circle pr-2"></i> About</h5>
+
+                    <div class="d-flex">
+                      <div class="col-6">
+                        <label>Name</label>
+                        <p>Aditya Suryana</p>
+                      </div>
+                      <div class="col-6">
+                        <label>Gender</label>
+                        <p>Male</p>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <label>Date of Birth</label>
+                      <p>12 February 2001</p>
+                    </div>
+
+
+                  <div class="col-12 mb-4">
+                    <label>Description</label>
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                      ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                      in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                  </div>
+
+                  <h5 class="font-weight-bolder bg-dark rounded-lg p-2 mr-2 mt-0 mb-2"> <i class="fas fa-university pr-2"></i> Class</h5>
+                    <div class="col-12 mt-3">
+                      <h5>Software Engineering</h5>
+                      <ul>
+                        <li>Class 1 | 2016-2017</li>
+                        <li>Class 1 | 2017-2018</li>
+                        <li>Class 1 | 2018-2019</li>
+                      </ul>
+                    </div>
+
+
+                </div>
+
+              </div>
+              <div class="m-3 d-flex justify-content-end">
+                <a href="#" class="btn text-dark border"><i class="fas fa-edit pr-3"></i>Edit Profile</a>
+
+              </div>
+
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-contact" role="tabpanel" aria-labelledby="v-pills-contact-tab">...</div>
+            <div class="tab-pane fade" id="v-pills-password" role="tabpanel" aria-labelledby="v-pills-password-tab">...</div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript" src="plugins/jsCalendar.js"></script>
+<script type="text/javascript" src="js/Chart.js"></script>
+<script type="text/javascript" src="jquery/dist/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+  </body>
+</html>

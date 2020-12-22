@@ -5322,8 +5322,8 @@ button:focus {
 
 .header-forum {
   color: #1c1c1e;
-  font-weight: bold;
   padding: 5px 10px;
+  font-weight: 500;
 }
 
 .header-forum:hover {
@@ -5337,6 +5337,7 @@ button:focus {
   background-color: #FFD082;
   border-radius: 10px;
   padding: 5px 10px;
+  font-weight: bold;
 }
 
 .category {
