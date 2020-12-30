@@ -2,12 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Dashboard | VIEDU</title>
+    <title>Manage Account | VIEDU</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="plugins/jsCalendar.css">
-
  </head>
 
   <body>
@@ -22,7 +21,7 @@
           </button>
 
           <div class="ml-3 dropdown-menu shadow">
-            <a href="#" class="dropdown-item"><i class="fa fa-user-circle pl-2 mr-3"></i>Account</a>
+            <a href="manage-account.html" class="dropdown-item"><i class="fa fa-user-circle pl-2 mr-3"></i>Account</a>
             <div class="dropdown-divider"></div>
             <a href="index.html" class="dropdown-item"><i class="fa fa-sign-out-alt pl-2 mr-3"></i>Logout</a>
           </div>
@@ -40,12 +39,12 @@
         </div>
         <div class="col-3">
           <div class="nav flex-column nav-pills bg-white border p-2 mb-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-            <a class="nav-link text-left mt-2 mb-2 active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="true">Profile</a>
-            <a class="nav-link text-left mb-2" id="v-pills-contact-tab" data-toggle="pill" href="#v-pills-contact" role="tab" aria-controls="v-pills-contact" aria-selected="false">Contact</a>
-            <a class="nav-link text-left mb-2" id="v-pills-password-tab" data-toggle="pill" href="#v-pills-password" role="tab" aria-controls="v-pills-password" aria-selected="false">Password</a>
-            <a class="nav-link text-left mb-2" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+            <a class="nav-link text-left mt-2 mb-2 active" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="true"><i class="fas fa-user text-center m-1 d-block d-sm-none" style="font-size: 20px;"></i><span class="d-none d-sm-block">Profile</span></a>
+            <a class="nav-link text-left mb-2" id="v-pills-contact-tab" data-toggle="pill" href="#v-pills-contact" role="tab" aria-controls="v-pills-contact" aria-selected="false"><i class="fas fa-address-book text-center m-1 d-block d-sm-none" style="font-size: 20px;"></i><span class="d-none d-sm-block">Contact</span></a>
+            <a class="nav-link text-left mb-2" id="v-pills-password-tab" data-toggle="pill" href="#v-pills-password" role="tab" aria-controls="v-pills-password" aria-selected="false"><i class="fas fa-key text-center m-1 d-block d-sm-none" style="font-size: 20px;"></i><span class="d-none d-sm-block">Password</span></a>
+            <a class="nav-link text-left mb-2" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-cog text-center m-1 d-block d-sm-none" style="font-size: 20px;"></i><span class="d-none d-sm-block">Settings</span></a>
           </div>
-          <a class="text-dark ml-2" href="dashboard-admin.html"><i class="fas fa-chevron-left pr-2"></i>Dashboard</a>
+          <a class="text-dark" href="dashboard-admin.html"><i class="fas fa-fw fa-columns center d-block d-sm-none" style="font-size: 20px;"></i><span class="d-none d-sm-block" style="margin-left: 20px;">Dashboard</span></a>
         </div>
         <div class="col-9 ">
           <div class="tab-content bg-white border p-2 rounded-lg mb-5" id="v-pills-tabContent">
@@ -54,27 +53,27 @@
 
               <div class="media p-3">
                 <div class="media-body text-left">
-                  <h5 class="font-weight-bolder bg-dark rounded-lg p-2 mr-2 mt-0 mb-2"> <i class="fas fa-info-circle pr-2"></i> About</h5>
+                  <h5 class="font-weight-bolder small-box bg-dark shadow-sm text-left p-3 mt-0 mb-2"> <i class="fas fa-info-circle pr-2"></i> About</h5>
 
                     <div class="d-flex">
                       <div class="col-6">
-                        <label>Name</label>
+                        <label class="">Name</label>
                         <p>Aditya Suryana</p>
                       </div>
                       <div class="col-6">
-                        <label>Gender</label>
+                        <label class="">Gender</label>
                         <p>Male</p>
                       </div>
                     </div>
 
                     <div class="col-12">
-                      <label>Date of Birth</label>
+                      <label class="">Date of Birth</label>
                       <p>12 February 2001</p>
                     </div>
 
 
                   <div class="col-12 mb-4">
-                    <label>Description</label>
+                    <label class="">Description</label>
                     <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                       eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
                       ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -83,30 +82,129 @@
                     </p>
                   </div>
 
-                  <h5 class="font-weight-bolder bg-dark rounded-lg p-2 mr-2 mt-0 mb-2"> <i class="fas fa-university pr-2"></i> Class</h5>
+                  <h5 class="font-weight-bolder small-box bg-dark shadow-sm text-left p-3 mt-0 mb-2"> <i class="fas fa-university pr-2"></i> Class</h5>
                     <div class="col-12 mt-3">
                       <h5>Software Engineering</h5>
-                      <ul>
+                      <ul style="list-style: none;">
                         <li>Class 1 | 2016-2017</li>
                         <li>Class 1 | 2017-2018</li>
-                        <li>Class 1 | 2018-2019</li>
+                        <li>Class 1 | On Going</li>
                       </ul>
                     </div>
 
-
                 </div>
-
               </div>
               <div class="m-3 d-flex justify-content-end">
-                <a href="#" class="btn text-dark border"><i class="fas fa-edit pr-3"></i>Edit Profile</a>
-
+                <a href="#" class="btn text-dark border-dark shadow-sm" style="border: 2px solid"><i class="fas fa-edit pr-3"></i>Edit Profile</a>
               </div>
-
             </div>
 
-            <div class="tab-pane fade" id="v-pills-contact" role="tabpanel" aria-labelledby="v-pills-contact-tab">...</div>
-            <div class="tab-pane fade" id="v-pills-password" role="tabpanel" aria-labelledby="v-pills-password-tab">...</div>
-            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+            <div class="tab-pane fade" id="v-pills-contact" role="tabpanel" aria-labelledby="v-pills-contact-tab">
+              <div class="media p-3">
+                <div class="media-body text-left">
+                  <h5 class="font-weight-bolder small-box bg-dark shadow-sm text-left p-3 mt-0 mb-2"> <i class="fas fa-address-book mr-3"></i>Contact</h5>
+
+                  <div class="form-row mt-4">
+                    <div class="col-12 ml-3">
+                      <label class="">Phone</label>
+                      <p class="text-justify">+62 7890 6678 3340</p>
+
+                      <label class="">Email</label>
+                      <p class="text-justify">adityasuryana12@gmail.com</p>
+                    </div>
+
+                    <div class="col-11 mb-2 text-center center">
+                      <h6 class="text-white bg-danger rounded-lg shadow-sm p-1"> <i class="fas fa-exclamation-circle p-2"></i> Emergency Contact</h6>
+                    </div>
+
+                    <div class="col-12 ml-3 mt-0">
+                      <p class="text-justify"><i class="fas fa-user pr-3"></i>John Doe</p>
+                      <p class="text-justify"><i class="fas fa-phone-alt pr-3"></i>+62 888 999 000</p>
+                    </div>
+
+                  </div>
+
+                  <h5 class="font-weight-bolder small-box bg-dark shadow-sm text-left p-3 mt-2 mb-2"> <i class="fas fa-map-marker-alt mr-3"></i>Address</h5>
+                    <div class="col-12 mt-3">
+                      <div class="form-row">
+                        <div class="col-12 mt-2">
+                          <h5 class="text-justify mb-2">H. Idris IV Street No. 47</h5>
+                          <p class="ml-1 mb-0"><i class="fas fa-city pr-2"></i>West Java - Bandung</p>
+                          <p class="ml-1"><i class="fas fa-envelope pr-2"></i>40614</p>
+                        </div>
+                        <div class="col-12 mt-0 ">
+                          <iframe class="p-3 rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.1750873102465!2d107.70333882923686!3d-6.926376668369874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTUnMzUuMCJTIDEwN8KwNDInMTQuMCJF!5e0!3m2!1sid!2sid!4v1608623792920!5m2!1sid!2sid" width="100%" height="auto" frameborder="0" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="m-3 d-flex justify-content-end">
+                      <a href="#" class="btn text-dark border-dark shadow-sm" style="border: 2px solid"><i class="fas fa-edit pr-3"></i>Edit Contact</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane fade" id="v-pills-password" role="tabpanel" aria-labelledby="v-pills-password-tab">
+              <div class="media p-3">
+                <div class="media-body text-left">
+                  <h5 class="font-weight-bolder small-box bg-dark shadow-sm text-left p-3 mt-0 mb-2"> <i class="fas fa-key mr-3"></i>Password</h5>
+
+                  <div class="form-row mt-4">
+                    <div class="col-12 ml-3 ">
+                      <label class="">Password</label>
+                      <input class="d-block border-0" type="password" name="" value="123pass123" readonly>
+                    </div>
+                  </div>
+                    <div class="m-3 d-flex justify-content-end">
+                      <a href="#" class="btn text-dark border-dark shadow-sm" style="border: 2px solid"><i class="fas fa-edit pr-3"></i>Edit Password</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+              <div class="media p-3">
+                <div class="media-body text-left">
+                  <h5 class="font-weight-bolder small-box bg-dark shadow-sm text-left p-3 mt-0 mb-2"> <i class="fas fa-envelope mr-3"></i>Email Notifications</h5>
+
+                  <div class="custom-control custom-checkbox p-3">
+                    <p class="font-weight-bolder mb-0">Newsletters</p>
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label font-weight-normal ml-4" style="font-size: 15px;" for="customCheck1">Notifications and special offers</label>
+                  </div>
+
+                  <h5 class="font-weight-bolder small-box bg-dark shadow-sm text-left p-3 mt-4 mb-2"> <i class="fas fa-bell mr-3"></i>General Preferences</h5>
+
+                  <div class="custom-control custom-checkbox p-3">
+                    <p class="font-weight-bolder mb-0">Recommended videos & forum</p>
+                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                    <label class="custom-control-label font-weight-normal ml-4" style="font-size: 15px;" for="customCheck2">Notify me based on trending</label>
+                  </div>
+
+                  <div class="custom-control custom-checkbox p-3">
+                    <p class="font-weight-bolder mb-0">Activity on my video & forum</p>
+                    <input type="checkbox" class="custom-control-input" id="customCheck3">
+                    <label class="custom-control-label font-weight-normal ml-4" style="font-size: 15px;" for="customCheck3">Notify me about comments and other activity</label>
+                  </div>
+
+                  <div class="custom-control custom-checkbox p-3">
+                    <p class="font-weight-bolder mb-0">Shared content</p>
+                    <input type="checkbox" class="custom-control-input" id="customCheck4">
+                    <label class="custom-control-label font-weight-normal ml-4" style="font-size: 15px;" for="customCheck4">Notify me when others share my content</label>
+                  </div>
+
+                  <div class="custom-control custom-checkbox p-3">
+                    <p class="font-weight-bolder mb-0">Mentions</p>
+                    <input type="checkbox" class="custom-control-input" id="customCheck5">
+                    <label class="custom-control-label font-weight-normal ml-4" style="font-size: 15px;" for="customCheck5">Notify me when others mention me</label>
+                  </div>
+
+                  <div class="m-3 d-flex justify-content-end">
+                    <a href="#" class="btn bg-yellow text-dark shadow-sm">Save Change</a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
